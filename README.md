@@ -4,6 +4,8 @@
 
 Type one sentence and Lavender turns it into an event, a celebration or a multi-day task. Notes live inside events, every person gets their own calendar, and small quests teach you the app as you go.
 
+Lavender is now available in French, Catalan and Aranese.
+
 No account. No ads. No tracking. Your data stays in your browser.
 
 ## Features
