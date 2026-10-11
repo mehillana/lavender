@@ -1,0 +1,40 @@
+# About Mango One
+
+**Mango One** is the native natural-language processing (NLP) engine that powers **Lavender**. It is the core component responsible for reading what you type in the *Smart bar* and instantly turning your everyday sentences into events, celebrations, and multi-day tasks.
+
+## Key Features
+
+*   **Not AI. No Cloud:** Mango One does not rely on complex neural networks, commercial language models, or third-party APIs. It runs entirely on fast, smart, rule-based logic inside your browser.
+*   **Absolute Privacy by Default:** Because there are no servers and no data leaves your device, your sentences, queries, and personal details stay entirely local and completely private.
+*   **Millisecond Speed:** Processing text locally means responses and event scheduling happen almost instantly before you even lift a finger.
+*   **Native Multilingual Support:** It understands and processes dates, times, and ranges seamlessly across four languages:
+    *   Catalan
+    *   Aranès
+    *   English
+    *   French
+
+## What Can Mango One Do?
+
+Mango One reads plain language to automatically identify dates, time ranges, people, and specific categories.
+
+### 1. Natural Scheduling (Smart Bar)
+Type a quick sentence and see it scheduled automatically:
+*   *"Dinner with Marta Friday 8pm"* ➡️ Becomes a real event with the correct date, time, and contact linked.
+*   *"Ship v2, 4 days"* ➡️ Automatically schedules a multi-day task with a checkbox and a finish line.
+
+### 2. Querying Your Schedule
+You can ask your calendar direct questions to find open slots or check upcoming plans:
+*   *What do I have tomorrow?*
+*   *When is Marta's birthday?*
+*   *When am I free on Friday?*
+
+## Understanding Time Categories
+
+The engine parses text to sort your calendar entries into four distinct types of time:
+1.  **Event:** Dinners, meetings, and calls (anything tied to a specific moment).
+2.  **Celebration:** Birthdays and milestones that deserve to stand out.
+3.  **Multi-day task:** Work that spans several days, featuring a checkbox and a deadline.
+4.  **Other:** Random ideas, notes, and quick reminders that don't fit into a strict box.
+
+---
+*Lavender and Mango One are built entirely in the open. If you want to help improve our natural language rules or contribute to the project, please check out our collaboration guidelines.*
