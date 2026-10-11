@@ -141,6 +141,11 @@ footer{text-align:center;padding:30px;color:var(--mu);font-size:13px}
 #cm{position:fixed;inset:0;z-index:21;display:none;place-items:center;background:rgba(36,20,80,.42);backdrop-filter:blur(6px);padding:14px}#cm.on{display:grid}
 #cm .sw{padding:0;cursor:pointer}#cm input[type=color]{width:34px;height:34px;padding:2px;border-radius:50%;cursor:pointer}
 @media(max-width:860px){#app{padding:8px;gap:8px}.top{padding:10px 14px}#view{padding:10px}.mg{gap:4px;grid-auto-rows:minmax(86px,1fr)}.mc{padding:5px;border-radius:12px}#bar{padding:10px 12px}}
+/* 3.0 */
+#app[data-tab=data] #pk{display:flex}#pk{overflow:auto}
+.ib.on{background:var(--g);color:#fff;border-color:transparent}.cc2{position:relative}.st{position:absolute;right:12px;top:10px;font-size:20px;color:var(--ac)}
+.ins{margin:0 0 12px}.ins summary{cursor:pointer;color:var(--mu)}.wk{display:flex;gap:8px;margin:10px 0}.wk span{display:grid;text-align:center;font-size:18px}.wk small{font-size:10px;color:var(--mu)}
+.mb2{display:flex;align-items:center;gap:8px;margin:3px 0}.mb2 i{height:8px;border-radius:9px;min-width:2px;flex:none;max-width:60%}
 </style></head><body>
 <div class="bg"></div>
 <div id="land">
@@ -171,14 +176,14 @@ footer{text-align:center;padding:30px;color:var(--mu);font-size:13px}
 <div class="glass rv"><div class="ch other" style="--c:#f08a30">Other</div><p>Ideas, notes and reminders that don't fit a box.</p></div></div></section>
 <section class="band glass rv"><h2>Open source, <em>open future.</em></h2><p>Lavender is built in the open. Read it, fork it, make it yours. No ads, no tracking, no account. Your calendar lives in your browser and nowhere else.</p><button class="btn" data-open>Open Lavender</button></section>
 <section class="fin rv"><h2>Your next great week starts with <em>one sentence.</em></h2><button class="btn" data-open>Start planning</button></section>
-<footer>Lavender. The open-source calendar.</footer></div>
+<footer>Lavender. The open-source calendar.</footer><p class="mu sm" style="text-align:center;padding-bottom:24px">Lavender 3.0.0</p></div>
 
 <div id="app">
-<div class="top glass"><div class="logo" data-home><i></i>Lavender</div><div class="sg" id="tabs"><button data-p="cal" class="on">Calendar</button><button data-p="mango">Mango One</button><button data-p="diary">Dietary</button><button data-p="con">Contacts</button></div><span class="sp1"></span><select class="ib" id="lgx" aria-label="Language"></select><button class="ib mb" id="mb">Calendars</button><h2 id="tl"></h2><div class="sqw"><input id="sq" placeholder="Search events" autocomplete="off" aria-label="Search"><div id="sr" class="glass"></div></div>
+<div class="top glass"><div class="logo" data-home><i></i>Lavender</div><div class="sg" id="tabs"><button data-p="cal" class="on">Calendar</button><button data-p="mango">Mango One</button><button data-p="diary">Dietary</button><button data-p="con">Contacts</button><button data-p="data">Data</button></div><span class="sp1"></span><select class="ib" id="lgx" aria-label="Language"></select><button class="ib mb" id="mb">Calendars</button><h2 id="tl"></h2><div class="sqw"><input id="sq" placeholder="Search events" autocomplete="off" aria-label="Search"><div id="sr" class="glass"></div></div>
 <button class="ib" id="pr" aria-label="Previous">&lsaquo;</button><button class="ib" id="td">Today</button><button class="ib" id="nx" aria-label="Next">&rsaquo;</button>
 <div class="sg" id="views"><button data-v="day">Day</button><button data-v="week">Week</button><button data-v="month">Month</button><button data-v="year">Year</button><button data-v="agenda">Agenda</button></div><button class="ib" id="qbtn">Quests</button></div>
 <div class="mid"><aside id="side" class="glass"></aside><main id="view" class="glass"></main></div>
-<div id="pm" class="pn glass"></div><div id="pd" class="pn glass"></div><div id="pc" class="pn glass"></div>
+<div id="pm" class="pn glass"></div><div id="pd" class="pn glass"></div><div id="pc" class="pn glass"></div><div id="pk" class="pn glass"></div>
 <div id="bar" class="glass"><div class="bi"><div class="sg" id="seg"><button data-t="" class="on">Auto</button><button data-t="event">Event</button><button data-t="celebration">Celebration</button><button data-t="task">Task</button><button data-t="other">Other</button></div><input id="ai" placeholder="Describe it: Dinner with Marta Friday 8pm" autocomplete="off" aria-label="Smart bar"><button class="btn" id="go">Create</button></div><div id="pv"></div></div>
 </div>
 <div id="md"></div><div id="cm"></div><aside id="qp" class="glass"></aside><div id="ts"></div><div id="tov"></div><div id="spot"></div><div id="tip" class="glass"></div>
@@ -218,6 +223,13 @@ Object.assign(D,{"Calendar":["Calendari","Calendrier","Calendari"],"Dietary":["D
 "Add birthday to calendar":["Afegeix l’aniversari al calendari","Ajouter l’anniversaire au calendrier","Apondir er aniversari ath calendari"],"{0}'s birthday":["Aniversari de {0}","Anniversaire de {0}","Aniversari de {0}"],
 "No contacts yet.":["Encara no hi ha contactes.","Pas encore de contacts.","Enquèra pas contactes."],"Birthday added to your calendar":["Aniversari afegit al calendari","Anniversaire ajouté au calendrier","Aniversari apondut ath calendari"]});
 Object.assign(D,{"Edit calendar":["Edita el calendari","Modifier le calendrier","Editar eth calendari"],"Color":["Color","Couleur","Color"]});
+Object.assign(D,{"Data":["Dades","Données","Dades"],"Backup":["Còpia de seguretat","Sauvegarde","Copia de seguretat"],"Import":["Importa","Importer","Importar"],"Imported {0} items":["Importats {0} elements","{0} éléments importés","{0} elements importats"],
+"Replace all your current data with this backup?":["Vols substituir totes les dades actuals per aquesta còpia?","Remplacer toutes vos données actuelles par cette sauvegarde ?","Voles substituir toti es dades actuaus per aguesta copia?"],"Backup restored":["Còpia restaurada","Sauvegarde restaurée","Copia restaurada"],
+"That file could not be read.":["No s’ha pogut llegir el fitxer.","Impossible de lire ce fichier.","Non s’a pogut liéger eth fichièr."],"Your data stays in your browser. Download a backup now and then.":["Les teves dades es queden al navegador. Descarrega una còpia de tant en tant.","Vos données restent dans votre navigateur. Téléchargez une sauvegarde de temps en temps.","Es tues dades que se demoren en eth navegador. Descarga ua copia de quan en quan."],
+"This week":["Aquesta setmana","Cette semaine","Aguesta setmana"],"Last 30 days":["Últims 30 dies","30 derniers jours","Darrèrs 30 dies"],"Avg sleep":["Son mitjà","Sommeil moyen","Som mejan"],"Avg energy":["Energia mitjana","Énergie moyenne","Energia mejana"],"Top tags":["Etiquetes principals","Étiquettes principales","Etiquetes principaus"],
+"Review":["Revisió","Bilan","Revision"],"Meals":["Àpats","Repas","Repàs"],"Gratitude":["Gratitud","Gratitude","Gratitud"],"Highlight":["Allò millor","Le meilleur","Çò miélhor"],"Challenge":["Repte","Défi","Repte"],"Tomorrow":["Demà","Demain","Deman"],
+"Breakfast":["Esmorzar","Petit-déjeuner","Dejunar"],"Lunch":["Dinar","Déjeuner","Dinnar"],"Dinner":["Sopar","Dîner","Sopar"],"Grateful for":["Agraït per","Reconnaissant pour","Agraït per"],"All":["Tots","Tous","Toti"],"in {0} days":["d’aquí a {0} dies","dans {0} jours","d’aciu a {0} dies"],"Group":["Grup","Groupe","Grop"]});
+
 
 Object.assign(D,{"Meet Mango One":["Coneix Mango One","Découvrez Mango One","Coneish Mango One"],
 "Ask your calendar <em class=\"mgm\">anything.</em>":["Pregunta-li al teu calendari <em class=\"mgm\">el que vulguis.</em>","Demandez à votre calendrier <em class=\"mgm\">ce que vous voulez.</em>","Pregunta a eth tau calendari <em class=\"mgm\">çò que vòles.</em>"],
@@ -306,11 +318,11 @@ let ti=s.replace(/\u200b/g,'').replace(/\s+/g,' ').trim();for(let k=0;k<4;k++)ti
 o.title=ti.charAt(0).toUpperCase()+ti.slice(1);
 if(o.time){const e=mn(o.time)+(dur||60);o.et=pad(Math.min(23,Math.floor(e/60)))+':'+pad(e>=1440?59:e%60)}
 return o}
-const desc=o=>{const c=S.cals.find(c=>c.id==o.cal)||ac();return `<span class="pc" style="border-color:${c.color}">${TY[o.type]}</span><span class="pc">${o.end>o.start?fm(o.start)+' – '+fm(o.end):fm(o.start)}</span>`+(o.time?`<span class="pc">${o.time}</span>`:'')+`<span class="pc">${esc(c.name)}</span>`};
+const desc=o=>{const c=S.cals.find(c=>c.id==o.cal)||ac();return `<span class="pc" style="border-color:${c.color}">${TY[o.type]}</span><span class="pc">${o.end>o.start?fm(o.start)+' – '+fm(o.end):fm(o.start)}</span>`+(o.time?`<span class="pc">${o.time}</span>`:'')+`<span class="pc">${esc(c.name)}</span>`+(o.rep?`<span class="pc">↻ ${tt({d:'Daily',w:'Weekly',m:'Monthly',y:'Yearly'}[o.rep])}</span>`:'')};
 const EX=()=>EXS[S.lang]||EXS.en;
-function pv(){const v=$('#ai').value.trim();let o;$('#pv').innerHTML=v?((o=nlp(v,force)).title?desc(o):'<span>'+tt('Keep typing...')+'</span>'):EX().map(x=>`<span class="pc ex" data-x="${esc(x)}">${esc(x)}</span>`).join('')}
-function mk(){const v=$('#ai').value.trim();if(!v)return;const o=nlp(v,force);if(!o.title)return toast(tt('Add a title, like "{0}"',EX()[0]));
-S.ev.push({id:nid(),title:o.title,type:o.type,cal:o.cal||ac().id,start:o.start,end:o.end,time:o.time,et:o.et,b:[],done:0});S.f.smart=1;cur=pd(o.start);$('#ai').value='';toast(tt('{0} added for {1}',TY[o.type],fm(o.start)));after();pv()}
+function pv(){const v=$('#ai').value.trim();let o;$('#pv').innerHTML=v?((o=nlpR(v,force)).title?desc(o):'<span>'+tt('Keep typing...')+'</span>'):EX().map(x=>`<span class="pc ex" data-x="${esc(x)}">${esc(x)}</span>`).join('')}
+function mk(){const v=$('#ai').value.trim();if(!v)return;const o=nlpR(v,force);if(!o.title)return toast(tt('Add a title, like "{0}"',EX()[0]));
+S.ev.push({id:nid(),title:o.title,type:o.type,cal:o.cal||ac().id,start:o.start,end:o.end,time:o.time,et:o.et,rep:o.rep||'',b:[],done:0});S.f.smart=1;cur=pd(o.start);$('#ai').value='';toast(tt('{0} added for {1}',TY[o.type],fm(o.start)));after();pv()}
 /* quests */
 const Q=[{id:'smart',t:'Say it out loud',d:'Create anything from the Smart bar.',p:10,f:()=>S.f.smart},
 {id:'cel',t:'Make a day special',d:'Add a celebration, like "Joan\'s birthday Oct 28".',p:10,f:()=>S.ev.some(e=>e.type=='celebration')},
@@ -417,7 +429,7 @@ if(s.demo){TD=1;const a=$('#ai'),dm=tt(s.demo);a.value='';let k=0;dt=setInterval
 function enter(){document.body.classList.add('app');S.en=1;render();pv();scrollTo(0,0);save();if(!S.tr)setTimeout(()=>tour(0),500)}
 $$('[data-open]').forEach(b=>b.onclick=enter);$$('[data-home]').forEach(b=>b.onclick=()=>{document.body.classList.remove('app');scrollTo(0,0)});
 addEventListener('keydown',e=>{if(e.key=='Escape'){if($('#tip').style.display=='block')endTour();else if(E)close();else $('#qp').classList.remove('on')}});
-addEventListener('keydown',e=>{if(E||$('#tip').style.display=='block'||/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)||e.target.isContentEditable||!document.body.classList.contains('app')||e.metaKey||e.ctrlKey||e.altKey)return;const k=e.key.toLowerCase(),m={d:'day',w:'week',m:'month',y:'year',a:'agenda'};
+addEventListener('keydown',e=>{if(E||$('#tip').style.display=='block'||/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)||e.target.isContentEditable||!document.body.classList.contains('app')||TAB!='cal'||e.metaKey||e.ctrlKey||e.altKey)return;const k=e.key.toLowerCase(),m={d:'day',w:'week',m:'month',y:'year',a:'agenda'};
 if(m[k])sv(m[k]);else if(k=='t'){FL=1;cur=tdy();render()}else if(k=='j'||k=='arrowright')step(1);else if(k=='k'||k=='arrowleft')step(-1);else if(k=='c'||k=='/'){e.preventDefault();$('#ai').focus()}});
 $('#sq').oninput=e=>{const q=e.target.value.trim().toLowerCase(),r=$('#sr');if(!q){r.classList.remove('on');return}const m=S.ev.filter(x=>(x.title+' '+(x.loc||'')+' '+x.b.map(b=>b.x).join(' ')).toLowerCase().includes(q)).sort((a,b)=>a.start<b.start?-1:1).slice(0,8);
 r.innerHTML=m.length?m.map(x=>`<div data-e="${x.id}"><b>${esc(x.title)}</b><br><span class="mu sm">${fm(x.start)}${x.time?' · '+x.time:''}${x.loc?' · '+esc(x.loc):''}</span></div>`).join(''):'<div class="mu">'+tt('No matches')+'</div>';r.classList.add('on')};
@@ -432,7 +444,7 @@ let TAB='cal',MH=[],DY=iso(tdy()),CE=null;
 const A=x=>x.normalize('NFD').replace(/[\u0300-\u036f]/g,''),sv2=()=>{try{localStorage.setItem(K,JSON.stringify(S))}catch(e){toast(tt('Storage is full. Remove a photo.'))}};
 $('#app').dataset.tab='cal';
 function tab(p){TAB=p;$('#app').dataset.tab=p;$$('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.p==p));p=='cal'?render():rp()}
-function rp(){TAB=='mango'?rM():TAB=='diary'?rD():TAB=='con'&&rC()}
+function rp(){TAB=='mango'?rM():TAB=='diary'?rD():TAB=='con'?rC():TAB=='data'&&rK()}
 $('#tabs').onclick=e=>{const b=e.target.closest('[data-p]');b&&tab(b.dataset.p)};
 $('#lgx').innerHTML=LN.map(x=>`<option value="${x[0]}">${x[1]}</option>`).join('');$('#lgx').value=S.lang;$('#lgx').onchange=e=>setLang(e.target.value);
 /* ---- Mango One: rule-based natural language (no AI) ---- */
@@ -464,7 +476,8 @@ const ded=L=>L.filter((x,i)=>L.findIndex(y=>y[1]===x[1])==i),lb=r=>r.a==r.b?ld(p
 const bds=()=>{const T=tdy(),L=up(366).filter(x=>x[1].type=='celebration').map(([k,e])=>[k,e.title,clr(e),e.id]),nm=A(L.map(x=>x[1]).join('|').toLowerCase());
 S.ct.forEach(c=>{if(!c.bd)return;const b=pd(c.bd);let d=new Date(T.getFullYear(),b.getMonth(),b.getDate());if(d<T)d.setFullYear(d.getFullYear()+1);if(!nm.includes(A(c.name.toLowerCase())))L.push([iso(d),tt("{0}'s birthday",c.name),'#e0509a',0])});return L.sort((a,b)=>a[0]<b[0]?-1:1)};
 function mgo(q){const T=tdy(),now=new Date(),s=pre(q),n=A(s),r=dr(s),t=tk(n),hm=pad(now.getHours())+':'+pad(now.getMinutes());
-if(MI.add.test(n)){const o=nlp(q.replace(/^\S+\s+/,''));if(!o.title)return pp(tt('I did not catch that. Try one of these:'))+ex();S.ev.push({id:nid(),title:o.title,type:o.type,cal:o.cal||ac().id,start:o.start,end:o.end,time:o.time,et:o.et,b:[],done:0});S.f.smart=1;checkQ();save();return pp(tt('Added: {0} on {1}.',esc(o.title),fm(o.start)))}
+const key=Object.keys(MI).find(k=>!/^(add|hi|nx)$/.test(k)&&MI[k].test(n))||(r?'list':'');if(key=='list'&&CAN[LK]&&/^(and|i|et|e|what about)\b/.test(n))return mgo(CAN[LK]+' '+q);if(key&&!MI.add.test(n))LK=key;
+if(MI.add.test(n)){const o=nlpR(q.replace(/^\S+\s+/,''));if(!o.title)return pp(tt('I did not catch that. Try one of these:'))+ex();S.ev.push({id:nid(),title:o.title,type:o.type,cal:o.cal||ac().id,start:o.start,end:o.end,time:o.time,et:o.et,rep:o.rep||'',b:[],done:0});S.f.smart=1;checkQ();save();return pp(tt('Added: {0} on {1}.',esc(o.title),fm(o.start)))}
 if(MI.hi.test(n))return pp(tt('Hi! I am Mango One. Ask me about events, reminders, notes, birthdays, the time or the day.'))+ex();
 if(MI.time.test(n)&&!t.length)return pp(tt('It is {0}.',hm));
 if(MI.day.test(n)&&!t.length)return r?pp(tt('That is {0}.',ld(pd(r.a),{...LD,year:'numeric'}))):pp(tt('Today is {0}.',ld(T,{...LD,year:'numeric'})));
@@ -507,21 +520,37 @@ PD.addEventListener('change',e=>{const t=e.target;if(t.id=='dd'&&t.value){DY=t.v
 PD.addEventListener('click',e=>{const t=e.target,m=t.closest('[data-m]'),n=t.closest('[data-n]'),w=t.closest('[data-w]'),r=t.closest('[data-r]'),k=t.closest('[data-k]');
 if(m){const d=dy();d.m=d.m==+m.dataset.m?-1:+m.dataset.m;sv2();rD()}else if(n){DY=n.dataset.n=='0'?iso(tdy()):iso(ad(pd(DY),+n.dataset.n));rD()}
 else if(w){const d=dy();d.w=Math.max(0,d.w+ +w.dataset.w);sv2();rD()}else if(r){dy().p.splice(+r.dataset.r,1);sv2();rD()}else if(k){DY=k.dataset.k;rD()}else if(t.id=='dx')dxp()});
-/* ---- Lavender Contacts ---- */
+
+/* ---- Lavender Contacts 2.3: groups, favourites, birthdays panel, vCard ---- */
+let CG='';
 const ini=n=>n.trim().split(/\s+/).slice(0,2).map(x=>x[0]).join('').toUpperCase(),lk=c=>c.ev&&S.ev.some(e=>e.id==c.ev);
-const cd=c=>`<div class="cc2" data-c="${c.id}"><div class="av">${esc(ini(c.name))}</div><h4>${esc(c.name)}</h4><div class="mu sm">${c.bd?fm(c.bd,{day:'numeric',month:'long'}):'&nbsp;'}</div><div style="clear:both;margin-top:10px;display:grid;gap:3px">${c.phone?`<a href="tel:${esc(c.phone)}">${esc(c.phone)}</a>`:''}${c.email?`<a href="mailto:${esc(c.email)}">${esc(c.email)}</a>`:''}${c.note?`<span class="mu sm">${esc(c.note)}</span>`:''}</div><div class="rw" style="margin:12px 0 0"><button class="ib" data-ed>${tt('Edit')}</button>${c.bd&&!lk(c)?`<button class="ib" data-bc>${tt('Add birthday to calendar')}</button>`:''}<button class="ib" data-dl>${tt('Delete')}</button></div></div>`;
-const cl=()=>{const q=($('#cs')||{value:''}).value.toLowerCase();return S.ct.filter(c=>(c.name+' '+c.phone+' '+c.email+' '+c.note).toLowerCase().includes(q)).sort((a,b)=>a.name.localeCompare(b.name)).map(cd).join('')||`<p class="mu">${tt('No contacts yet.')}</p>`};
-const cf=()=>{const c=CE=='new'?{}:S.ct.find(x=>x.id==CE)||{},f=(i,p,v,ty)=>`<input id="f-${i}" ${ty?`type="${ty}" `:''}placeholder="${tt(p)}" value="${esc(v||'')}">`;return `<div class="cc2" style="max-width:520px;display:grid;gap:8px">${f('n','Name',c.name)}${f('p','Phone',c.phone)}${f('e','Email',c.email)}<label>${tt('Birthday')} ${f('b','Birthday',c.bd,'date')}</label>${f('o','Note',c.note)}<div class="rw" style="margin:0"><button class="ib" id="fx">${tt('Close')}</button><span style="flex:1"></span><button class="btn" id="fs">${tt('Save')}</button></div></div>`};
-function rC(){const q=($('#cs')||{value:''}).value;$('#pc').innerHTML=`<div class="rw" style="margin:0"><h3><em>Lavender Contacts</em></h3><span style="flex:1"></span><input id="cs" placeholder="${tt('Search contacts')}" value="${esc(q)}"><button class="btn" id="ca">${tt('Add contact')}</button></div>${CE?cf():''}<div class="cg" id="cl">${cl()}</div>`}
+const nb=c=>{const b=pd(c.bd),T=tdy();let d=new Date(T.getFullYear(),b.getMonth(),b.getDate());if(d<T)d.setFullYear(d.getFullYear()+1);return Math.round((d-T)/864e5)};
+const grs=()=>[...new Set(S.ct.map(c=>c.grp).filter(Boolean))].sort();
+const cd=c=>`<div class="cc2" data-c="${c.id}"><div class="av">${esc(ini(c.name))}</div><button class="st" data-fv>${c.fav?'★':'☆'}</button><h4>${esc(c.name)}</h4><div class="mu sm">${c.bd?fm(c.bd,{day:'numeric',month:'long'}):'&nbsp;'}${c.grp?' · '+esc(c.grp):''}</div><div style="clear:both;margin-top:10px;display:grid;gap:3px">${c.phone?`<a href="tel:${esc(c.phone)}">${esc(c.phone)}</a>`:''}${c.email?`<a href="mailto:${esc(c.email)}">${esc(c.email)}</a>`:''}${c.note?`<span class="mu sm">${esc(c.note)}</span>`:''}</div><div class="rw" style="margin:12px 0 0"><button class="ib" data-ed>${tt('Edit')}</button>${c.bd&&!lk(c)?`<button class="ib" data-bc>${tt('Add birthday to calendar')}</button>`:''}<button class="ib" data-dl>${tt('Delete')}</button></div></div>`;
+const cl=()=>{const q=($('#cs')||{value:''}).value.toLowerCase();return S.ct.filter(c=>(!CG||(CG=='*'?c.fav:c.grp==CG))&&(c.name+' '+c.phone+' '+c.email+' '+c.note+' '+(c.grp||'')).toLowerCase().includes(q)).sort((a,b)=>(b.fav|0)-(a.fav|0)||a.name.localeCompare(b.name)).map(cd).join('')||`<p class="mu">${tt('No contacts yet.')}</p>`};
+const upb=()=>{const L=S.ct.filter(c=>c.bd&&nb(c)<=60).sort((a,b)=>nb(a)-nb(b)).slice(0,5);return L.length?`<div class="cc2"><b>${tt('Upcoming birthdays:')}</b>`+L.map(c=>`<div class="qr" style="cursor:default"><b style="min-width:140px;color:var(--ink);font-size:14px">${esc(c.name)}</b><span class="mu sm">${fm(c.bd,{day:'numeric',month:'long'})} · ${nb(c)?tt('in {0} days',nb(c)):tt('Today')}</span></div>`).join('')+'</div>':''};
+const gpb=()=>S.ct.length?`<div class="rw" style="margin:0">`+[['',tt('All')],['*','★'],...grs().map(x=>[x,esc(x)])].map(([k,l])=>`<button class="ib${CG==k?' on':''}" data-g="${esc(k)}">${l}</button>`).join('')+'</div>':'';
+const cf=()=>{const c=CE=='new'?{}:S.ct.find(x=>x.id==CE)||{},f=(i,p,v,ty,l)=>`<input id="f-${i}" ${ty?`type="${ty}" `:''}${l?`list="${l}" `:''}placeholder="${tt(p)}" value="${esc(v||'')}">`;return `<div class="cc2" style="max-width:520px;display:grid;gap:8px">${f('n','Name',c.name)}${f('p','Phone',c.phone)}${f('e','Email',c.email)}<label>${tt('Birthday')} ${f('b','Birthday',c.bd,'date')}</label>${f('g','Group',c.grp,'','gl')}<datalist id="gl">${grs().map(x=>`<option value="${esc(x)}">`).join('')}</datalist>${f('o','Note',c.note)}<div class="rw" style="margin:0"><button class="ib" id="fx">${tt('Close')}</button><span style="flex:1"></span><button class="btn" id="fs">${tt('Save')}</button></div></div>`};
+function rC(){const q=($('#cs')||{value:''}).value;$('#pc').innerHTML=`<div class="rw" style="margin:0"><h3><em>Lavender Contacts</em></h3><span style="flex:1"></span><input id="cs" placeholder="${tt('Search contacts')}" value="${esc(q)}"><label class="ib" style="cursor:pointer">${tt('Import')} .vcf<input type="file" id="cv" accept=".vcf,text/vcard" hidden></label><button class="ib" id="cx">${tt('Export')} .vcf</button><button class="btn" id="ca">${tt('Add contact')}</button></div>${upb()}${gpb()}${CE?cf():''}<div class="cg" id="cl">${cl()}</div>`}
+const vq=s=>String(s||'').replace(/[\\;,]/g,'\\$&').replace(/\n/g,'\\n');
+function vcfOut(){return S.ct.map(c=>['BEGIN:VCARD','VERSION:3.0','FN:'+vq(c.name),'N:'+vq(c.name)+';;;;',c.phone&&'TEL:'+vq(c.phone),c.email&&'EMAIL:'+vq(c.email),c.bd&&'BDAY:'+c.bd,c.grp&&'CATEGORIES:'+vq(c.grp),c.note&&'NOTE:'+vq(c.note),'END:VCARD'].filter(Boolean).join('\r\n')).join('\r\n')+'\r\n'}
+function vcfIn(t){let n=0;t.replace(/\r?\n[ \t]/g,'').split(/BEGIN:VCARD/i).slice(1).forEach(b=>{const g=k=>{const m=b.match(new RegExp('^'+k+'[^:\\r\\n]*:(.*)$','im'));return m?m[1].replace(/\\n/gi,' ').replace(/\\([,;\\])/g,'$1').trim():''};
+const name=g('FN')||g('N').split(';').filter(Boolean).reverse().join(' ');if(!name)return;let bd=g('BDAY').replace(/^(\d{4})-?(\d{2})-?(\d{2}).*/,'$1-$2-$3');if(!/^\d{4}-\d{2}-\d{2}$/.test(bd))bd='';
+const c={id:nid(),name,phone:g('TEL'),email:g('EMAIL'),bd,grp:g('CATEGORIES').split(',')[0],note:g('NOTE')};if(S.ct.some(x=>x.name==c.name&&x.phone==c.phone))return;S.ct.push(c);n++});return n}
+function dlf(n,t,ty){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([t],{type:ty||'text/plain'}));a.download=n;a.click()}
+function rdf(f,cb){const r=new FileReader();r.onload=()=>cb(String(r.result));r.onerror=()=>toast(tt('That file could not be read.'));r.readAsText(f)}
 const PC=$('#pc');
 PC.addEventListener('input',e=>{if(e.target.id=='cs')$('#cl').innerHTML=cl()});
-PC.addEventListener('click',e=>{const t=e.target,c=t.closest('[data-c]'),id=c&&c.dataset.c;
-if(t.id=='ca'){CE='new';rC();$('#f-n').focus()}else if(t.id=='fx'){CE=null;rC()}
-else if(t.id=='fs'){const n=$('#f-n').value.trim();if(!n)return $('#f-n').focus();const v={name:n,phone:$('#f-p').value.trim(),email:$('#f-e').value.trim(),bd:$('#f-b').value,note:$('#f-o').value.trim()};if(CE=='new')S.ct.push({id:nid(),...v});else Object.assign(S.ct.find(x=>x.id==CE),v);CE=null;sv2();rC()}
+PC.addEventListener('change',e=>{if(e.target.id=='cv'&&e.target.files[0])rdf(e.target.files[0],t=>{const n=vcfIn(t);sv2();toast(tt('Imported {0} items',n));rC()})});
+PC.addEventListener('click',e=>{const t=e.target,c=t.closest('[data-c]'),id=c&&c.dataset.c,g=t.closest('[data-g]');
+if(g){CG=g.dataset.g;rC()}else if(t.id=='cx')dlf('lavender-contacts.vcf',vcfOut(),'text/vcard')
+else if(t.closest('[data-fv]')){const k=S.ct.find(x=>x.id==id);k.fav=k.fav?0:1;sv2();rC()}
+else if(t.id=='ca'){CE='new';rC();$('#f-n').focus()}else if(t.id=='fx'){CE=null;rC()}
+else if(t.id=='fs'){const n=$('#f-n').value.trim();if(!n)return $('#f-n').focus();const v={name:n,phone:$('#f-p').value.trim(),email:$('#f-e').value.trim(),bd:$('#f-b').value,grp:$('#f-g').value.trim(),note:$('#f-o').value.trim()};
+if(CE=='new')S.ct.push({id:nid(),...v});else{const k=S.ct.find(x=>x.id==CE);Object.assign(k,v);const ev=S.ev.find(x=>x.id==k.ev);if(ev&&k.bd){ev.start=ev.end=k.bd;ev.title=tt("{0}'s birthday",k.name)}}CE=null;sv2();rC()}
 else if(t.closest('[data-ed]')){CE=id;rC();$('#f-n').focus()}
 else if(t.closest('[data-bc]')){const k=S.ct.find(x=>x.id==id),ev={id:nid(),title:tt("{0}'s birthday",k.name),type:'celebration',cal:ac().id,start:k.bd,end:k.bd,time:'',et:'',b:[],done:0,rep:'y'};S.ev.push(ev);k.ev=ev.id;S.f.smart=1;checkQ();sv2();toast(tt('Birthday added to your calendar'));rC()}
 else if(t.closest('[data-dl]')){const b=t.closest('[data-dl]');if(b.dataset.s){S.ct=S.ct.filter(x=>x.id!=id);sv2();rC()}else{b.dataset.s=1;b.textContent=tt('Sure?')}}});
-
 $('#mgtry').onclick=()=>{enter();tab('mango')};
 /* calendar editor: rename + recolor */
 let CK=null,CKC='';
@@ -533,6 +562,42 @@ $('#side').addEventListener('click',e=>{const u=e.target.closest('[data-ed2]');i
 $('#cm').addEventListener('click',e=>{const t=e.target,k=t.closest('[data-k]');if(t.id=='cm'||t.id=='cm-x'){$('#cm').classList.remove('on');CK=null}else if(t.id=='cm-ok')calSave();else if(k){CKC=k.dataset.k;$$('#cm-s .sw').forEach(b=>b.classList.toggle('on',b==k));$('#cm-c').value=CKC}});
 $('#cm').addEventListener('input',e=>{if(e.target.id=='cm-c'){CKC=e.target.value;$$('#cm-s .sw').forEach(b=>b.classList.remove('on'))}});
 $('#cm').addEventListener('keydown',e=>{if(e.key=='Enter'&&e.target.id=='cm-n')calSave();else if(e.key=='Escape'){$('#cm').classList.remove('on');CK=null}});
+/* ===== 2.1 Mango One / Smart bar: recurrence + end time, follow-ups ===== */
+const WDW='monday|tuesday|wednesday|thursday|friday|saturday|sunday|dilluns|dimarts|dimecres|dijous|divendres|dissabte|diumenge|lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche|dilhun|dimars|dimèrcs|dimercs|dijaus|dijòus|dividres|dimenge';
+const RW=new RegExp('(?<![\\p{L}])(?:every|cada|chaque|tous les|tots els|toti es)\\s+(?=(?:'+WDW+')(?![\\p{L}]))','iu'),
+RE=[['d',/(?<![\p{L}])(every day|daily|cada dia|tots els dies|chaque jour|tous les jours|toti es dies)(?![\p{L}])/iu],['m',/(?<![\p{L}])(every month|monthly|cada mes|chaque mois)(?![\p{L}])/iu],['y',/(?<![\p{L}])(every year|yearly|annually|cada any|chaque ann[ée]e|cada an)(?![\p{L}])/iu],['w',/(?<![\p{L}])(every week|weekly|cada setmana|chaque semaine)(?![\p{L}])/iu]],
+RU=/(?<![\p{L}\d])(?:until|fins a les|fins a la|jusqu[’']à|enquia las?)\s+(\d{1,2})(?::(\d{2}))?\s?h?(?![\p{L}\d])/iu,CAN={rem:'reminders',free:'when am i free',many:'how many events',list:'what do i have'};let LK='';
+function nlpR(t,fc){let s=t,rep='',et='',m;if(RW.test(s)){s=s.replace(RW,'');rep='w'}else for(const [r,x] of RE)if(x.test(s)){s=s.replace(x,' ');rep=r;break}
+if(m=s.match(RU)){const h=+m[1],mi=+(m[2]||0);if(h<24&&mi<60){et=pad(h)+':'+pad(mi);s=s.replace(RU,' ')}}
+const o=nlp(s,fc);if(rep)o.rep=rep;if(et&&o.time&&et>o.time)o.et=et;return o}
+/* ===== 2.2 Dietary: templates, weekly review, mood chart, tags ===== */
+const TP=[['Review',['Highlight','Challenge','Tomorrow']],['Meals',['Breakfast','Lunch','Dinner']],['Gratitude',['Grateful for','Grateful for','Grateful for']]];
+const tagsOf=d=>(d.g||'').split(/[,#]+/).map(x=>x.trim().toLowerCase()).filter(Boolean);
+function ins(){const T=tdy(),days=[...Array(7)].map((_,i)=>{const k=iso(ad(T,i-6));return[k,S.dy[k]]}),E=days.filter(x=>has(x[1])).map(x=>x[1]),tg={},cn=MD.map(()=>0);
+const av=f=>{const v=E.map(f).filter(x=>x>0);return v.length?(v.reduce((a,b)=>a+b,0)/v.length).toFixed(1):'–'};E.forEach(d=>tagsOf(d).forEach(x=>tg[x]=(tg[x]||0)+1));
+for(let i=0;i<30;i++){const d=S.dy[iso(ad(T,-i))];if(d&&d.m>=0)cn[d.m]++}const mx=Math.max(1,...cn),top=Object.keys(tg).sort((a,b)=>tg[b]-tg[a]).slice(0,3).join(', ')||'–';
+return `<details class="ins" open><summary>${tt('This week')}</summary><div class="wk">${days.map(([k,d])=>`<span title="${k}"><small>${DN[(pd(k).getDay()+6)%7][0]}</small>${d&&d.m>=0?MD[d.m]:'·'}</span>`).join('')}</div><p class="mu sm">${E.length}/7 ${tt('entries')} · ${tt('Avg sleep')}: ${av(d=>+d.s)} h · ${tt('Avg energy')}: ${av(d=>d.e)} · ${tt('Water')}: ${E.reduce((a,d)=>a+d.w,0)}<br>${tt('Top tags')}: ${esc(top)}</p><div class="sh" style="margin:12px 0 6px">${tt('Last 30 days')}</div>${cn.map((c,i)=>`<div class="mb2"><span>${MD[i]}</span><i style="width:${c/mx*100}%;background:${MC[i]}"></i><b>${c}</b></div>`).join('')}</details>`}
+function rDL(){const q=($('#ds')||{value:''}).value.toLowerCase(),L=Object.keys(S.dy).filter(k=>has(S.dy[k])&&(!q||(S.dy[k].x+' '+S.dy[k].g).toLowerCase().includes(q))).sort().reverse(),T=tdy(),tg={};Object.values(S.dy).forEach(d=>tagsOf(d).forEach(x=>tg[x]=(tg[x]||0)+1));
+$('#dl').innerHTML='<div class="str">'+[...Array(35)].map((_,i)=>{const k=iso(ad(T,i-34)),d=S.dy[k];return `<i data-k="${k}" title="${k}" style="${d&&d.m>=0?'background:'+MC[d.m]:has(d)?'background:var(--ac);opacity:.5':''}"></i>`}).join('')+`</div><p class="mu sm" style="margin-bottom:8px">${tt('{0}-day streak',strk())} · ${L.length} ${tt('entries')}</p>`+ins()+`<div class="rw" style="margin:8px 0">${Object.keys(tg).sort((a,b)=>tg[b]-tg[a]).slice(0,8).map(x=>`<span class="pc ex" data-tg="${esc(x)}">#${esc(x)}</span>`).join('')}</div>`+(L.length?L.map(k=>{const d=S.dy[k];return `<div class="it${k==DY?' on':''}" data-k="${k}"><span style="font-size:20px;width:26px">${d.m>=0?MD[d.m]:'·'}</span><b style="font-weight:500">${fm(k,{day:'numeric',month:'short'})}</b><span class="mu sm">${esc((d.x||d.g||'').slice(0,40))}</span></div>`}).join(''):`<p class="mu">${tt('No entries yet.')}</p>`)}
+PD.addEventListener('click',e=>{const g=e.target.closest('[data-tg]'),p=e.target.closest('[data-tp]');if(g){$('#ds').value=g.dataset.tg;rDL()}else if(p){const x=TP[+p.dataset.tp],d=dy();d.x=(d.x?d.x+'\n\n':'')+x[1].map((w,i)=>tt(w)+(x[0]=='Gratitude'?' '+(i+1):'')+': ').join('\n');sv2();rD()}});
+/* ===== 3.0 Data: backup (.json), calendar (.ics), contacts (.vcf), diary (.txt) ===== */
+const IC=s=>String(s).replace(/[\\;,]/g,'\\$&').replace(/\n/g,'\\n'),dz=d=>d.replace(/-/g,'');
+function icsOut(){const L=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Lavender//3.0.0//EN','CALSCALE:GREGORIAN'],st=new Date().toISOString().replace(/[-:]|\.\d+/g,'');S.ev.forEach(e=>{L.push('BEGIN:VEVENT','UID:'+e.id+'@lavender','DTSTAMP:'+st,'SUMMARY:'+IC(e.title||'—'));
+if(e.time){L.push('DTSTART:'+dz(e.start)+'T'+e.time.replace(':','')+'00','DTEND:'+dz(e.end)+'T'+((e.et&&e.start==e.end?e.et:e.time).replace(':',''))+'00')}else L.push('DTSTART;VALUE=DATE:'+dz(e.start),'DTEND;VALUE=DATE:'+dz(iso(ad(pd(e.end),1))));
+if(e.rep)L.push('RRULE:FREQ='+{d:'DAILY',w:'WEEKLY',m:'MONTHLY',y:'YEARLY'}[e.rep]);if(e.loc)L.push('LOCATION:'+IC(e.loc));const nt=e.b.map(b=>(b.t=='c'?(b.d?'[x] ':'[ ] '):'')+b.x).filter(x=>x.trim()).join('\n');if(nt)L.push('DESCRIPTION:'+IC(nt));
+if(e.rm!=null&&e.rm!==''&&e.time)L.push('BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:'+IC(e.title||'—'),'TRIGGER:-PT'+(+e.rm)+'M','END:VALARM');L.push('END:VEVENT')});L.push('END:VCALENDAR');return L.join('\r\n')+'\r\n'}
+function icsIn(t){let n=0;const cal=ac().id;t.replace(/\r?\n[ \t]/g,'').split(/BEGIN:VEVENT/i).slice(1).forEach(b=>{b=b.split(/END:VEVENT/i)[0];const g=k=>{const m=b.match(new RegExp('^'+k+'(;[^:\\r\\n]*)?:(.*)$','im'));return m?m[2].trim():''},
+un=s=>s.replace(/\\n/gi,'\n').replace(/\\([,;\\])/g,'$1'),dd=v=>v.replace(/^(\d{4})(\d{2})(\d{2}).*/,'$1-$2-$3'),tm=v=>/T\d{4}/.test(v)?v.replace(/^.*T(\d{2})(\d{2}).*/,'$1:$2'):'',s=g('DTSTART'),z=g('DTEND'),sm=un(g('SUMMARY'));if(!/^\d{8}/.test(s))return;
+const a=dd(s),time=tm(s),et=z?tm(z):'';let e=/^\d{8}/.test(z)?dd(z):a;if(!time&&e>a)e=iso(ad(pd(e),-1));if(e<a)e=a;
+const rep={DAILY:'d',WEEKLY:'w',MONTHLY:'m',YEARLY:'y'}[(g('RRULE').match(/FREQ=(\w+)/)||[])[1]]||'',ds=un(g('DESCRIPTION'));if(S.ev.some(x=>x.title==sm&&x.start==a&&x.time==time))return;
+S.ev.push({id:nid(),title:sm||'—',type:/birthday|aniversari|anniversaire|cumple/i.test(sm)?'celebration':'event',cal,start:a,end:e,time,et,rep,loc:un(g('LOCATION')),b:ds?ds.split('\n').filter(x=>x.trim()).map(x=>({t:'p',x,d:0})):[],done:0});n++});return n}
+const BKUP=()=>JSON.stringify({app:'lavender',version:'3.0.0',date:new Date().toISOString(),data:S});
+function restore(t){let j,d;try{j=JSON.parse(t);d=j&&j.app=='lavender'?j.data:null}catch(e){}if(!d||!Array.isArray(d.ev)||!Array.isArray(d.cals)||!d.cals.length)return toast(tt('That file could not be read.'));if(!confirm(tt('Replace all your current data with this backup?')))return;
+Object.keys(S).forEach(k=>delete S[k]);Object.assign(S,{ty:{event:1,celebration:1,task:1,other:1},q:{},f:{v:{}},pts:0,en:1,tr:1,sp:1,mo:1,bg:'lavender',dy:{},ct:[]},d);S.ac=S.cals.some(c=>c.id==S.ac)?S.ac:S.cals[0].id;sv2();toast(tt('Backup restored'));applyBg();setLang(S.lang||'en');tab('cal')}
+function rK(){const n=Object.keys(S.dy).filter(k=>has(S.dy[k])).length,row=(l,k,i)=>`<div class="rw"><b style="min-width:190px;font-weight:500">${l}</b><button class="ib" data-x="${k}">${tt('Export')}</button>${i?`<label class="ib" style="cursor:pointer">${tt('Import')}<input type="file" hidden accept=".${i}" data-i="${i}"></label>`:''}</div>`;
+$('#pk').innerHTML=`<div><h3><em>${tt('Data')}</em></h3><span class="mu sm">${tt('Your data stays in your browser. Download a backup now and then.')}</span></div><div class="cc2" style="max-width:640px">${row(tt('Backup')+' (.json)','json','json')}${row(tt('Calendar')+' (.ics)','ics','ics')}${row(tt('Contacts')+' (.vcf)','vcf','vcf')}${row(tt('Dietary')+' (.txt)','txt','')}<p class="mu sm">${S.ev.length} · ${S.ct.length} · ${n} · ${(JSON.stringify(S).length/1024).toFixed(0)} KB</p></div>`}
+$('#pk').addEventListener('click',e=>{const k=(e.target.closest('[data-x]')||{dataset:{}}).dataset.x;if(k=='json')dlf('lavender-backup-'+iso(tdy())+'.json',BKUP(),'application/json');else if(k=='ics')dlf('lavender.ics',icsOut(),'text/calendar');else if(k=='vcf')dlf('lavender-contacts.vcf',vcfOut(),'text/vcard');else if(k=='txt')dxp()});
+$('#pk').addEventListener('change',e=>{const i=e.target.dataset.i,f=e.target.files&&e.target.files[0];if(!i||!f)return;rdf(f,t=>{if(i=='json')return restore(t);const n=i=='ics'?icsIn(t):vcfIn(t);if(n){S.f.smart=1;checkQ();sv2()}toast(tt('Imported {0} items',n));rK()})});
 /* landing demo */
 (async()=>{const P=()=>LPS[S.lang]||LPS.en,el=$('#hb'),hp=$('#hp');
 for(let i=0;;i=(i+1)%4){const s=P()[i];for(let c=1;c<=s.length;c++){el.textContent=s.slice(0,c);await sl(52)}
