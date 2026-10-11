@@ -91,4 +91,5 @@ Contributions are welcome. Open an issue to discuss a bug or an idea, or send a 
 
 ## License
 
-Released under the MIT License.
+This project is licensed under the GNU General Public License v3.0 or later.
+See the [LICENSE](LICENSE) file for the full text.
