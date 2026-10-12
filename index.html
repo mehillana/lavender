@@ -191,7 +191,24 @@ body.app #app{height:100vh;height:100dvh}
 #view[data-v=month] .mc{padding:6px 8px}#view[data-v=month] .ch{margin-top:2px;padding:2px 7px;font-size:12px}
 @media(max-width:860px){#side{top:8px;left:8px;right:8px;bottom:84px;width:auto;max-height:none}.ot{display:none}#opt{order:3}
 #view[data-v=month]{padding:6px}#view[data-v=month] .mg{gap:3px}#view[data-v=month] .mc{padding:4px 2px}#view[data-v=month] .mc .ch:not(.sp){padding:0;font-size:0;margin:2px 1px 0}}
-</style></head><body>
+/* 3.1.1 - 6.1.0 */
+#tw{display:none;position:fixed;top:72px;right:16px;width:340px;max-width:calc(100vw - 24px);max-height:calc(100dvh - 96px);overflow:auto;z-index:25;padding:20px 22px;background:var(--cd2);box-shadow:0 20px 60px rgba(40,20,100,.3)}#tw.open{display:block}
+#tw h4{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mu);margin:16px 0 8px}#tw .tr{display:flex;align-items:center;gap:10px;padding:5px 0}#tw .tr>span{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#twb{font-size:16px}.ch[draggable=true]{cursor:grab}
+[data-bg=sakura]{--l1:#fff5f8;--l2:#ffe3ec;--l3:#ffecf1;--l4:#f6e6f6;--ac:#d9558a;--g:linear-gradient(120deg,#ec6f9d,#f49ab8 60%,#f8bfd0);--b1:#ffc3d6;--b2:#ffe0ea}
+[data-bg=meadow]{--l1:#f5fbea;--l2:#e6f4cf;--l3:#eef7d8;--l4:#e2f1e4;--ac:#5fa22e;--g:linear-gradient(120deg,#6fb83a,#9acd4a 60%,#c4df6a);--b1:#cfe9a0;--b2:#e8f2b8}
+[data-bg=citrus]{--l1:#fffbe8;--l2:#fff0b8;--l3:#fff4cc;--l4:#ffe9d0;--ac:#e8920c;--g:linear-gradient(120deg,#f2a516,#f7c534 60%,#fadf6a);--b1:#ffe08a;--b2:#ffc98a}
+[data-bg=lagoon]{--l1:#ecfbf9;--l2:#d2f3ef;--l3:#def7f3;--l4:#d8ecf8;--ac:#12a3a0;--g:linear-gradient(120deg,#15b3ae,#3fcbc2 60%,#7fe0d6);--b1:#aee9e1;--b2:#b8dff5}
+[data-bg=dusk]{--ink:#fff0f5;--mu:#d6b3c8;--cd:rgba(60,28,64,.62);--cd2:rgba(76,36,76,.94);--ln:rgba(255,170,190,.22);--l1:#24112e;--l2:#3a1a44;--l3:#4a2048;--l4:#2e1840;--ac:#ff8f6b;--g:linear-gradient(120deg,#ff7a6b,#ff9a6b 60%,#ffc16b);--b1:#b44a6b;--b2:#6b3a8a}
+[data-bg=snow]{--ink:#eef4fb;--mu:#a9bacd;--cd:rgba(24,36,54,.6);--cd2:rgba(30,44,66,.94);--ln:rgba(190,215,245,.2);--l1:#0e1624;--l2:#172338;--l3:#141f33;--l4:#1a2236;--ac:#9ec8f0;--g:linear-gradient(120deg,#7fb2e6,#a5cdf2 60%,#cfe6fa);--b1:#28466e;--b2:#3a5a88}
+#snow{display:none;position:fixed;inset:0;pointer-events:none;z-index:40;overflow:hidden;opacity:.8}[data-bg=snow] #snow{display:block}#snow:before,#snow:after{content:"";position:absolute;inset:0;background-repeat:repeat}
+#snow:before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='240'%3E%3Cg fill='white' opacity='.85'%3E%3Ccircle cx='24' cy='30' r='2.4'/%3E%3Ccircle cx='96' cy='96' r='1.8'/%3E%3Ccircle cx='160' cy='60' r='2.2'/%3E%3Ccircle cx='60' cy='170' r='2'/%3E%3Ccircle cx='150' cy='210' r='2.6'/%3E%3C/g%3E%3C/svg%3E");animation:sn 9s linear infinite}
+#snow:after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='130' height='160'%3E%3Cg fill='white' opacity='.6'%3E%3Ccircle cx='20' cy='20' r='1.4'/%3E%3Ccircle cx='80' cy='70' r='1.2'/%3E%3Ccircle cx='110' cy='130' r='1.6'/%3E%3Ccircle cx='40' cy='120' r='1.2'/%3E%3C/g%3E%3C/svg%3E");animation:sn2 6s linear infinite}
+@keyframes sn{to{background-position:40px 240px}}@keyframes sn2{to{background-position:-26px 160px}}@media(prefers-reduced-motion:reduce){#snow:before,#snow:after{animation:none}}
+@media print{.top,#side,#tw,#tabs,#bar,#rain,#snow,.pn,#md,#cm,#pf{display:none!important}body{background:#fff!important}#app{display:block!important;height:auto!important;padding:0!important}.mid{display:block!important}#view{overflow:visible!important;height:auto!important;background:#fff!important;color:#000!important;box-shadow:none!important}}
+@media(max-width:860px){#tw{top:8px;left:8px;right:8px;bottom:84px;width:auto;max-height:none}#twb{order:3}}
+</style><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg"><meta name="theme-color" content="#8b6bf0">
+</head><body>
 <div class="bg"></div>
 <div id="land">
 <nav class="nav"><div class="logo" data-open><i></i>Lavender</div><div><a href="#f">Features</a><a href="#k">Event types</a><select class="ib" id="lgn" aria-label="Language"></select><button class="btn" data-open>Open Lavender</button></div></nav>
@@ -221,17 +238,17 @@ body.app #app{height:100vh;height:100dvh}
 <div class="glass rv"><div class="ch other" style="--c:#f08a30">Other</div><p>Ideas, notes and reminders that don't fit a box.</p></div></div></section>
 <section class="band glass rv"><h2>Open source, <em>open future.</em></h2><p>Lavender is built in the open. Read it, fork it, make it yours. No ads, no tracking, no account. Your calendar lives in your browser and nowhere else.</p><button class="btn" data-open>Open Lavender</button></section>
 <section class="fin rv"><h2>Your next great week starts with <em>one sentence.</em></h2><button class="btn" data-open>Start planning</button></section>
-<footer>Lavender. The open-source calendar.</footer><p class="mu sm" style="text-align:center;padding-bottom:24px">Lavender 3.1.0</p></div>
+<footer>Lavender. The open-source calendar.</footer><p class="mu sm" style="text-align:center;padding-bottom:24px">Lavender 6.1.0</p></div>
 
 <div id="app">
 <div class="top glass"><div class="logo" data-home><i></i>Lavender</div><div class="sg" id="tabs"><button data-p="cal" class="on">Calendar</button><button data-p="mango">Mango One</button><button data-p="diary">Dietary</button><button data-p="con">Contacts</button><button data-p="data">Data</button></div><span class="sp1"></span><select class="ib" id="lgx" aria-label="Language"></select><button class="ib mb" id="mb">Calendars</button><h2 id="tl"></h2><div class="sqw"><input id="sq" placeholder="Search events" autocomplete="off" aria-label="Search"><div id="sr" class="glass"></div></div>
 <button class="ib" id="pr" aria-label="Previous">&lsaquo;</button><button class="ib" id="td">Today</button><button class="ib" id="nx" aria-label="Next">&rsaquo;</button>
-<div class="sg" id="views"><button data-v="day">Day</button><button data-v="week">Week</button><button data-v="month">Month</button><button data-v="year">Year</button><button data-v="agenda">Agenda</button></div><button class="ib" id="qbtn">Quests</button><button class="ib" id="opt" aria-label="Options"><span>⚙</span><span class="ot">Options</span></button><button class="pfa" id="pft" aria-label="Profile"></button></div>
+<div class="sg" id="views"><button data-v="day">Day</button><button data-v="week">Week</button><button data-v="month">Month</button><button data-v="year">Year</button><button data-v="agenda">Agenda</button></div><button class="ib" id="qbtn">Quests</button><button class="ib" id="twb" aria-label="Today">☀</button><button class="ib" id="opt" aria-label="Options"><span>⚙</span><span class="ot">Options</span></button><button class="pfa" id="pft" aria-label="Profile"></button></div>
 <div class="mid"><aside id="side" class="glass"></aside><main id="view" class="glass"></main></div>
 <div id="pm" class="pn glass"></div><div id="pd" class="pn glass"></div><div id="pc" class="pn glass"></div><div id="pk" class="pn glass"></div>
 <div id="bar" class="glass"><div class="bi"><div class="sg" id="seg"><button data-t="" class="on">Auto</button><button data-t="event">Event</button><button data-t="celebration">Celebration</button><button data-t="task">Task</button><button data-t="other">Other</button></div><input id="ai" placeholder="Describe it: Dinner with Marta Friday 8pm" autocomplete="off" aria-label="Smart bar"><button class="btn" id="go">Create</button></div><div id="pv"></div></div>
 </div>
-<div id="md"></div><div id="cm"></div><div id="pf"></div><div id="rain" aria-hidden="true"></div><aside id="qp" class="glass"></aside><div id="ts"></div><div id="tov"></div><div id="spot"></div><div id="tip" class="glass"></div>
+<div id="md"></div><div id="cm"></div><div id="pf"></div><div id="tw" class="glass"></div><div id="snow" aria-hidden="true"></div><div id="rain" aria-hidden="true"></div><aside id="qp" class="glass"></aside><div id="ts"></div><div id="tov"></div><div id="spot"></div><div id="tip" class="glass"></div>
 
 <script>
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],pad=n=>String(n).padStart(2,'0'),sl=ms=>new Promise(r=>setTimeout(r,ms));
@@ -283,11 +300,25 @@ Object.assign(D,{"Maple":["Auró","Érable","Auró"],"Harvest":["Collita","Réco
 Object.assign(D,{"Options":["Opcions","Options","Opcions"],
 "Fast and light. Adds events and answers the basics.":["Ràpid i lleuger. Afegeix esdeveniments i respon el bàsic.","Rapide et léger. Ajoute des événements et répond à l’essentiel.","Rapid e leugèr. Apond eveniments e respon çò basic."],
 "Our most powerful model. Understands the whole calendar.":["El nostre model més potent. Entén tot el calendari.","Notre modèle le plus puissant. Comprend tout le calendrier.","Eth nòste modèl mès potent. Entén tot eth calendari."],
-"Hi! I am lavender-lite-1b. Tell me what to add, with a date and time.":["Hola! Sóc lavender-lite-1b. Digues-me què he d’afegir, amb data i hora.","Bonjour ! Je suis lavender-lite-1b. Dites-moi quoi ajouter, avec une date et une heure.","Adiu! Soi lavender-lite-1b. Digues-me qué è d’apondir, damb data e ora."],
-"lavender-lite-1b cannot answer that. Switch to Mango One.":["lavender-lite-1b no pot respondre això. Canvia a Mango One.","lavender-lite-1b ne peut pas répondre. Passez à Mango One.","lavender-lite-1b non pòt respóner aquerò. Cambia a Mango One."],
+"Hi! I am lavender-lite-2b. Tell me what to add, with a date and time.":["Hola! Sóc lavender-lite-2b. Digues-me què he d’afegir, amb data i hora.","Bonjour ! Je suis lavender-lite-2b. Dites-moi quoi ajouter, avec une date et une heure.","Adiu! Soi lavender-lite-2b. Digues-me qué è d’apondir, damb data e ora."],
+"lavender-lite-2b cannot answer that. Switch to Mango One.":["lavender-lite-2b no pot respondre això. Canvia a Mango One.","lavender-lite-2b ne peut pas répondre. Passez à Mango One.","lavender-lite-2b non pòt respóner aquerò. Cambia a Mango One."],
 "Dinner with Marta on Friday at 8pm":["Sopar amb Marta divendres a les 20h","Dîner avec Marta vendredi à 20h","Sopar damb Marta dividres a las 20h"],"Dentist tomorrow at 10:30":["Dentista demà a les 10:30","Dentiste demain à 10h30","Dentista deman a las 10:30"],
-"Open Mango One and pick lavender-lite-1b: type a sentence and it finds the date, time and person for you.":["Obre Mango One i tria lavender-lite-1b: escriu una frase i trobarà la data, l’hora i la persona per tu.","Ouvrez Mango One et choisissez lavender-lite-1b : écrivez une phrase et il trouve la date, l’heure et la personne pour vous.","Dubrís Mango One e tria lavender-lite-1b: escriu ua frasa e trobarà era data, l’ora e era persona entàs tu."],
-"Add an event with lavender-lite-1b in Mango One.":["Afegeix un esdeveniment amb lavender-lite-1b a Mango One.","Ajoutez un événement avec lavender-lite-1b dans Mango One.","Apond un eveniment damb lavender-lite-1b en Mango One."]});
+"Open Mango One and pick lavender-lite-2b: type a sentence and it finds the date, time and person for you.":["Obre Mango One i tria lavender-lite-2b: escriu una frase i trobarà la data, l’hora i la persona per tu.","Ouvrez Mango One et choisissez lavender-lite-2b : écrivez une phrase et il trouve la date, l’heure et la personne pour vous.","Dubrís Mango One e tria lavender-lite-2b: escriu ua frasa e trobarà era data, l’ora e era persona entàs tu."],
+"Add an event with lavender-lite-2b in Mango One.":["Afegeix un esdeveniment amb lavender-lite-2b a Mango One.","Ajoutez un événement avec lavender-lite-2b dans Mango One.","Apond un eveniment damb lavender-lite-2b en Mango One."]});
+Object.assign(D,{"Share":["Comparteix","Partager","Compartir"],"Copied to clipboard":["Copiat al porta-retalls","Copié dans le presse-papiers","Copiat ath tablèr"],"More tools":["Més eines","Plus d’outils","Mès aisines"],"Share this week":["Comparteix la setmana","Partager la semaine","Compartir era setmana"],
+"Print / PDF":["Imprimeix / PDF","Imprimer / PDF","Imprimir / PDF"],"Notifications":["Avisos","Notifications","Avisos"],"On":["Activat","Activé","Activat"],"Off":["Desactivat","Désactivé","Desactivat"],"Install app":["Instal·la l’aplicació","Installer l’application","Installar era aplicacion"],"Custom theme":["Tema propi","Thème personnalisé","Tèma pròpri"],
+"Classic":["Clàssics","Classiques","Clàssics"],"Autumn & winter":["Tardor i hivern","Automne et hiver","Auton e iuèrn"],"Spring & summer":["Primavera i estiu","Printemps et été","Primauèra e estiu"],"Special":["Especials","Spéciaux","Especiaus"],
+"Sakura":["Sakura","Sakura","Sakura"],"Meadow":["Prat","Prairie","Prat"],"Citrus":["Cítrics","Agrumes","Citrics"],"Lagoon":["Llacuna","Lagon","Lagona"],"Dusk":["Capvespre","Crépuscule","Vèspre"],"Snowfall":["Nevada","Chute de neige","Nevada"],"Custom":["Propi","Personnalisé","Pròpri"],
+"Mood":["Estat d’ànim","Humeur","Estat d’anim"],"Habits":["Hàbits","Habitudes","Abitudes"],"New habit":["Nou hàbit","Nouvelle habitude","Navèth abitud"],"Time block":["Bloc de temps","Bloc de temps","Bloc de temps"],"Focus":["Concentració","Concentration","Concentracion"],
+"Block added.":["Bloc afegit.","Bloc ajouté.","Bloc apondut."],"No free time found.":["No he trobat temps lliure.","Aucun temps libre trouvé.","Non èi trobat temps liure."],"Suggested times:":["Horaris suggerits:","Horaires suggérés :","Oraris suggerits:"],
+"These events overlap:":["Aquests esdeveniments se superposen:","Ces événements se chevauchent :","Aguesti eveniments que se sobrepausen:"],"No conflicts found.":["No hi ha conflictes.","Aucun conflit.","Cap conflicte."],
+"Dear diary":["Benvolgut dietari","Cher journal","Estimat dietari"],"Write your first Dietary entry.":["Escriu la teva primera entrada al Dietari.","Écrivez votre première entrée dans le Journal.","Escriu era tua purmèra entrada ath Dietari."],
+"Know your people":["Coneix la teva gent","Connaissez vos proches","Coneish ta gent"],"Add your first contact.":["Afegeix el teu primer contacte.","Ajoutez votre premier contact.","Apond eth tau purmèr contacte."],
+"Make it yours":["Fes-ho teu","Faites-le vôtre","Hè-lo tau"],"Set your name in your profile.":["Posa el teu nom al perfil.","Renseignez votre nom dans le profil.","Pausa eth tau nòm ath perfil."],
+"Small steps":["Petits passos","Petits pas","Petits pas"],"Tick a habit three days in a row.":["Marca un hàbit tres dies seguits.","Cochez une habitude trois jours de suite.","Marca ua abitud tres dies seguits."],
+"Everything in one place":["Tot en un sol lloc","Tout au même endroit","Tot en un sol lòc"],"Calendars, themes, language and more live in Options. Your calendar always keeps the full screen.":["Calendaris, temes, idioma i més viuen a Opcions. El calendari sempre té tota la pantalla.","Calendriers, thèmes, langue et plus vivent dans Options. Votre calendrier garde toujours tout l’écran.","Calendaris, tèmes, lengua e mès que viuen en Opcions. Eth calendari que a tostemp tota era pantalla."],
+"Your day at a glance":["El teu dia d’un cop d’ull","Votre journée d’un coup d’œil","Eth tau dia d’un cop d’uelh"],"Today shows your events, mood, water, habits and quick time blocks.":["Avui mostra els teus esdeveniments, ànim, aigua, hàbits i blocs de temps ràpids.","Aujourd’hui affiche vos événements, humeur, eau, habitudes et blocs de temps rapides.","Uei mostre es tui eveniments, anim, aigua, abitudes e blocs de temps rapids."]});
+
 
 
 
@@ -385,7 +416,7 @@ function pv(){const v=$('#ai').value.trim();let o;$('#pv').innerHTML=v?((o=nlpR(
 function mk(){const v=$('#ai').value.trim();if(!v)return;const o=nlpR(v,force);if(!o.title)return toast(tt('Add a title, like "{0}"',EX()[0]));
 S.ev.push({id:nid(),title:o.title,type:o.type,cal:o.cal||ac().id,start:o.start,end:o.end,time:o.time,et:o.et,rep:o.rep||'',b:[],done:0});S.f.smart=1;cur=pd(o.start);$('#ai').value='';toast(tt('{0} added for {1}',TY[o.type],fm(o.start)));after();pv()}
 /* quests */
-const Q=[{id:'smart',t:'Say it out loud',d:'Add an event with lavender-lite-1b in Mango One.',p:10,f:()=>S.f.smart},
+const Q=[{id:'smart',t:'Say it out loud',d:'Add an event with lavender-lite-2b in Mango One.',p:10,f:()=>S.f.smart},
 {id:'cel',t:'Make a day special',d:'Add a celebration, like "Joan\'s birthday Oct 28".',p:10,f:()=>S.ev.some(e=>e.type=='celebration')},
 {id:'task',t:'Think bigger than a day',d:'Create a multi-day task: "Launch plan Monday to Friday".',p:15,f:()=>S.ev.some(e=>e.type=='task'&&e.end>e.start)},
 {id:'note',t:'Write it down',d:'Add a notes block inside an event.',p:15,f:()=>S.ev.some(e=>e.b.some(b=>b.x.trim()))},
@@ -410,7 +441,7 @@ if(S.mo){const n=moon(ds);if(n)o.push([tt(n),'#8a9bd6'])}return o}
 const spc=ds=>spec(ds).map(x=>`<div class="ch sp" style="--c:${x[1]}">${x[0]}</div>`).join('');
 function va(){let h='<div style="max-width:720px;margin:auto">',n=0;for(let i=0;i<60;i++){const d=ad(cur,i),k=iso(d),es=evOn(k),sp=spc(k);if(!es.length&&!sp)continue;n++;h+=`<div class="ag"><div class="ad2" data-go="${k}"><b>${d.getDate()}</b><small>${ld(d,{weekday:'short',month:'short'})}</small></div><div class="al">${sp}${es.map(e=>chip(e,k)).join('')}</div></div>`}return h+(n?'':'<p class="mu" style="padding:40px;text-align:center">'+tt('Nothing planned for the next 60 days. Try the Smart bar below.')+'</p>')+'</div>'}
 const TH=[['lavender','Lavender','linear-gradient(135deg,#f1e9ff,#d9c8ff)'],['dawn','Dawn','linear-gradient(135deg,#ffe3e3,#ffd0b8)'],['ocean','Ocean','linear-gradient(135deg,#dcecff,#a8e0f0)'],['mist','Mist','linear-gradient(135deg,#e1efe6,#c4e3c8)'],['night','Night','linear-gradient(135deg,#2c1a63,#14102f)']];
-function applyBg(){const R=document.documentElement;R.dataset.bg=S.bg;if(S.bg=='lavender')delete R.dataset.theme;else R.dataset.theme=['night','embers','pine','rain'].includes(S.bg)?'dark':'light'}
+function applyBg(){const R=document.documentElement;R.dataset.bg=S.bg;if(S.bg=='lavender')delete R.dataset.theme;else R.dataset.theme=(['night','embers','pine','rain','dusk','snow'].includes(S.bg)||(S.bg=='custom'&&S.cu&&S.cu.dark))?'dark':'light'}
 const H=46;
 function vm(){const s=ws(new Date(cur.getFullYear(),cur.getMonth(),1)),T=iso(tdy());let h='<div class="mh">'+DN.map(d=>`<b>${d}</b>`).join('')+'</div><div class="mg">';
 for(let i=0;i<42;i++){const d=ad(s,i),k=iso(d),es=evOn(k);h+=`<div class="mc${d.getMonth()!=cur.getMonth()?' o':''}${k==T?' t':''}" data-d="${k}"><span class="dn" data-go="${k}">${d.getDate()}</span>`+spc(k)+es.slice(0,3).map(e=>chip(e,k)).join('')+(es.length>3?`<i class="more" data-go="${k}">${tt('+{0} more',es.length-3)}</i>`:'')+'</div>'}return h+'</div>'}
@@ -433,7 +464,7 @@ function nw(ds,tm){const e={id:nid(),title:'',type:'event',cal:ac().id,start:ds,
 function open(id,dr){const e=dr||S.ev.find(x=>x.id==id);if(!e)return;E=e;draft=dr||null;
 $('#md').innerHTML=`<div class="mdl"><input class="tt" id="m-t" placeholder="${tt('Event title')}" value="${esc(e.title)}"><div class="sg" id="m-ty" style="width:max-content;max-width:100%;overflow:auto">${Object.keys(TY).map(k=>`<button data-k="${k}" class="${e.type==k?'on':''}">${TY[k]}</button>`).join('')}</div>
 <div class="rw"><select id="m-c">${S.cals.map(c=>`<option value="${c.id}"${c.id==e.cal?' selected':''}>${esc(c.name)}</option>`).join('')}</select><label>${tt('From')} <input type="date" id="m-s" value="${e.start}"></label><label>${tt('to')} <input type="date" id="m-e" value="${e.end}"></label><label>${tt('Time')} <input type="time" id="m-ti" value="${e.time}"></label><label>${tt('until')} <input type="time" id="m-et" value="${e.et||''}"></label></div>
-<details class="mo"${e.rep||e.rm||e.loc?' open':''}><summary>${tt('More options')}</summary><div class="rw"><label>${tt('Repeat')} <select id="m-r">${[['','Never'],['d','Daily'],['w','Weekly'],['m','Monthly'],['y','Yearly']].map(o=>`<option value="${o[0]}"${(e.rep||'')==o[0]?' selected':''}>${tt(o[1])}</option>`).join('')}</select></label><label>${tt('Remind')} <select id="m-rm">${[['','None'],['0','At start'],['10','10 min before'],['30','30 min before'],['60','1 hour before']].map(o=>`<option value="${o[0]}"${(e.rm==null?'':e.rm)==o[0]?' selected':''}>${tt(o[1])}</option>`).join('')}</select></label><input id="m-l" placeholder="${tt('Location')}" value="${esc(e.loc||'')}"></div></details>
+<details class="mo"${e.rep||e.rm||e.loc?' open':''}><summary>${tt('More options')}</summary><div class="rw"><label>${tt('Repeat')} <select id="m-r">${[['','Never'],['d','Daily'],['w','Weekly'],['m','Monthly'],['y','Yearly']].map(o=>`<option value="${o[0]}"${(e.rep||'')==o[0]?' selected':''}>${tt(o[1])}</option>`).join('')}</select></label><label>${tt('Remind')} <select id="m-rm">${[['','None'],['0','At start'],['10','10 min before'],['30','30 min before'],['60','1 hour before']].map(o=>`<option value="${o[0]}"${(e.rm==null?'':e.rm)==o[0]?' selected':''}>${tt(o[1])}</option>`).join('')}</select></label><input id="m-l" placeholder="${tt('Location')}" value="${esc(e.loc||'')}"></div><div class="rw"><button class="ib" id="m-sh">${tt('Share')}</button><button class="ib" id="m-ics">.ics</button></div></details>
 <label class="rw" id="m-dw" style="display:${e.type=='task'?'flex':'none'}"><input type="checkbox" id="m-d"${e.done?' checked':''}> ${tt('Mark as done')}</label>
 <div class="sh">${tt('Notes')}</div><div id="bks">${bks(e)}</div><div class="rw"><button class="ib" data-a="h">${tt('+ Heading')}</button><button class="ib" data-a="p">${tt('+ Text')}</button><button class="ib" data-a="c">${tt('+ Checklist')}</button><button class="ib" data-a="r">${tt('+ Reminder')}</button></div>
 <div class="rw"><button class="ib" id="m-x">${tt('Delete')}</button><span style="flex:1"></span><button class="btn" id="m-ok">${tt('Done')}</button></div></div>`;$('#md').classList.add('on');if(dr)$('#m-t').focus()}
@@ -472,9 +503,10 @@ if(y){S.ty[y.dataset.ty]=S.ty[y.dataset.ty]?0:1;return after()}
 if(t.id=='ncb')addCal();else if(t.id=='tr')tour(0);else if(t.id=='hm')document.body.classList.remove('app')});
 /* tour */
 const TR=[{h:'Welcome to Lavender',p:'The calendar that listens. Here is a 30-second look around.'},
-{s:'#tabs [data-p=mango]',h:'Mango One',p:'Open Mango One and pick lavender-lite-1b: type a sentence and it finds the date, time and person for you.'},
+{s:'#tabs [data-p=mango]',h:'Mango One',p:'Open Mango One and pick lavender-lite-2b: type a sentence and it finds the date, time and person for you.'},
 {s:'#views',h:'Four ways to see time',p:'Day, week, month, year and a running agenda. Click any day number to zoom in, or press D, W, M, Y.'},
-{s:'#side',h:'A calendar for every person',p:'Add people, give each a colour, show or hide them. The legend filters events, celebrations, tasks and other.'},
+{s:'#opt',h:'Everything in one place',p:'Calendars, themes, language and more live in Options. Your calendar always keeps the full screen.'},
+{s:'#twb',h:'Your day at a glance',p:'Today shows your events, mood, water, habits and quick time blocks.'},
 {s:'#view',h:'Click anywhere to create',p:'Click a day or an hour to start an event. Inside every event you get notes blocks: headings, text, checklists and reminders.'},
 {s:'#qbtn',h:'Quests',p:'Eight small missions teach you Lavender and grow your level. Start with the Smart bar.'}];
 let dt,TD=0;
@@ -502,7 +534,7 @@ applyBg();if(S.en)document.body.classList.add('app');initLang();render();pv();
 /* ===== Lavender 2.0: tabs, Mango One, Dietary, Contacts ===== */
 S.dy=S.dy||{};S.ct=S.ct||[];
 let TAB='cal',MH={},DY=iso(tdy()),CE=null;
-const A=x=>x.normalize('NFD').replace(/[\u0300-\u036f]/g,''),sv2=()=>{try{localStorage.setItem(K,JSON.stringify(S))}catch(e){toast(tt('Storage is full. Remove a photo.'))}};
+const A=x=>x.normalize('NFD').replace(/[\u0300-\u036f]/g,''),sv2=()=>{try{localStorage.setItem(K,JSON.stringify(S))}catch(e){toast(tt('Storage is full. Remove a photo.'))}checkQ()};
 $('#app').dataset.tab='cal';
 function tab(p){TAB=p;$('#app').dataset.tab=p;$$('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.p==p));p=='cal'?render():rp()}
 function rp(){TAB=='mango'?rM():TAB=='diary'?rD():TAB=='con'?rC():TAB=='data'&&rK()}
@@ -533,13 +565,16 @@ const rw=(k,t,ty,c,id,tm,x)=>`<div class="qr"${id?` data-e="${id}"`:''}><b>${fm(
 const er=([k,e])=>rw(k,e.title,e.type,clr(e),e.id,e.time),lst=(h,L)=>pp(h)+L.join(''),LD={weekday:'long',day:'numeric',month:'long'};
 const up=n=>{const L=[];for(let i=0;i<n;i++){const k=iso(ad(tdy(),i));evOn(k).forEach(e=>L.push([k,e]))}return L};
 const inR=r=>{const L=[];for(let d=pd(r.a),z=pd(r.b),i=0;d<=z&&i<400;d=ad(d,1),i++){const k=iso(d);evOn(k).forEach(e=>L.push([k,e]))}return L};
-const ded=L=>L.filter((x,i)=>L.findIndex(y=>y[1]===x[1])==i),lb=r=>r.a==r.b?ld(pd(r.a),LD):fm(r.a)+' – '+fm(r.b),has2=(s,t)=>t.some(w=>A(s.toLowerCase()).includes(w));
+const ded=L=>L.filter((x,i)=>L.findIndex(y=>y[1]===x[1])==i),lb=r=>r.a==r.b?ld(pd(r.a),LD):fm(r.a)+' – '+fm(r.b),has2=(s,t)=>{const x=A(s.toLowerCase());return t.some(w=>x.includes(w)||(w.length>4&&x.split(/[^a-z0-9]+/).some(y=>y.length>3&&lev(y,w)<=1)))};
 const bds=()=>{const T=tdy(),L=up(366).filter(x=>x[1].type=='celebration').map(([k,e])=>[k,e.title,clr(e),e.id]),nm=A(L.map(x=>x[1]).join('|').toLowerCase());
 S.ct.forEach(c=>{if(!c.bd)return;const b=pd(c.bd);let d=new Date(T.getFullYear(),b.getMonth(),b.getDate());if(d<T)d.setFullYear(d.getFullYear()+1);if(!nm.includes(A(c.name.toLowerCase())))L.push([iso(d),tt("{0}'s birthday",c.name),'#e0509a',0])});return L.sort((a,b)=>a[0]<b[0]?-1:1)};
 function mgo(q){const T=tdy(),now=new Date(),s=pre(q),n=A(s),r=dr(s),t=tk(n),hm=pad(now.getHours())+':'+pad(now.getMinutes());
-const key=Object.keys(MI).find(k=>!/^(add|hi|nx)$/.test(k)&&MI[k].test(n))||(r?'list':'');if(key=='list'&&CAN[LK]&&/^(and|i|et|e|what about)\b/.test(n))return mgo(CAN[LK]+' '+q);if(key&&!MI.add.test(n))LK=key;
+const key=Object.keys(MI).find(k=>!/^(add|hi|nx)$/.test(k)&&MI[k].test(n))||(r?'list':'');if((!key||key=='list')&&CAN[LK]&&/^(and for|and|what about|i|et|e)\b/.test(n))return mgo(CAN[LK]+' '+q.replace(/^(and for|and|what about|i|et|e)\s+/i,''));if(key&&!MI.add.test(n))LK=key;
 if(MI.add.test(n)){const o=nlpR(q.replace(/^\S+\s+/,''));if(!o.title)return pp(tt('I did not catch that. Try one of these:'))+ex();S.ev.push({id:nid(),title:o.title,type:o.type,cal:o.cal||ac().id,start:o.start,end:o.end,time:o.time,et:o.et,rep:o.rep||'',b:[],done:0});S.f.smart=1;checkQ();save();return pp(tt('Added: {0} on {1}.',esc(o.title),fm(o.start)))}
 if(MI.hi.test(n))return pp(tt('Hi! I am Mango One. Ask me about events, reminders, notes, birthdays, the time or the day.'))+ex();
+if(MI.conf.test(n)){const P=[];up(60).forEach(([k,e],i,a)=>{if(!e.time)return;const s=mn(e.time),z=Math.max(s+30,e.et?mn(e.et):s+60);a.slice(i+1).forEach(([k2,e2])=>{if(k2==k&&e2.time){const s2=mn(e2.time),z2=Math.max(s2+30,e2.et?mn(e2.et):s2+60);if(s<z2&&s2<z)P.push([k,e,e2])}})});return P.length?pp(tt('These events overlap:'))+P.slice(0,6).map(([k,a,b])=>rw(k,a.title+' ↔ '+b.title,'event','#e0509a',a.id,a.time)).join(''):pp(tt('No conflicts found.'))}
+if(MI.plan.test(n)){const R=r||{a:iso(T),b:iso(ad(T,7))},mm=n.match(/(\d+(?:[.,]\d+)?)\s*(h|hour|hours|hora|hores|heure|heures|ora|ores|min|minutes?|minuts?)\b/),du=mm?Math.round(parseFloat(mm[1].replace(',','.'))*(/^min/.test(mm[2])?1:60)):60,L=[];for(let d=pd(R.a),z=pd(R.b),i=0;d<=z&&i<30&&L.length<6;d=ad(d,1),i++){const k=iso(d);fs(k,du,k==iso(T)?Math.ceil((now.getHours()*60+now.getMinutes())/30)*30:0).forEach(f=>{if(L.length<6)L.push([k,f[0]])})}
+return L.length?pp(tt('Suggested times:'))+L.map(([k,s])=>`<span class="pc ex" data-bk="${k}|${s}|${du}">${fm(k)} · ${hhmm(s)}–${hhmm(s+du)}</span>`).join(' '):pp(tt('No free time found.'))}
 if(MI.time.test(n)&&!t.length)return pp(tt('It is {0}.',hm));
 if(MI.day.test(n)&&!t.length)return r?pp(tt('That is {0}.',ld(pd(r.a),{...LD,year:'numeric'}))):pp(tt('Today is {0}.',ld(T,{...LD,year:'numeric'})));
 if(MI.moon.test(n)){const f=nm=>{for(let i=0;i<45;i++){const k=iso(ad(T,i));if(moon(k)==nm)return ld(pd(k),LD)}return'–'};return pp(tt('Next full moon: {0}. Next new moon: {1}.',f('Full Moon'),f('New Moon')))}
@@ -556,13 +591,13 @@ if(r){const L=ded(inR(r));return L.length?lst(tt('Here is what you have for {0}:
 if(t.length){const L=S.ev.filter(e=>has2(e.title+' '+(e.loc||''),t)).sort((a,b)=>a.start<b.start?-1:1);if(L.length)return lst(tt('Here is what you have for {0}:',esc(t.join(' '))),L.slice(0,8).map(e=>rw(e.start,e.title,e.type,clr(e),e.id,e.time)))}
 return pp(tt('I did not catch that. Try one of these:'))+ex()}
 const bub=(u,h)=>`<div class="qb${u?' u':''}">${h}</div>`,mdl=()=>S.mm=='lite'?'lite':'fried',ex2=()=>['Dinner with Marta on Friday at 8pm','Dentist tomorrow at 10:30'].map(x=>`<span class="pc ex" data-q="${esc(tt(x))}">${esc(tt(x))}</span>`).join(' ');
-function lite(q){const s=pre(q),n=A(s),r=dr(s),o=nlpR(q),qs=/[?¿]/.test(q)||/^(what|when|who|how|que|qui|quan|quant|quants|quin|quina|quins|quel|quelle|quand|combien|qu['’])/.test(n),adv=Object.keys(MI).some(k=>!/^(add|hi|nx|time|day)$/.test(k)&&MI[k].test(n)),sw=pp(tt('lavender-lite-1b cannot answer that. Switch to Mango One.'))+'<span class="pc ex" data-mm="fried">Mango One · fried-yuca</span>';
-if(MI.hi.test(n))return pp(tt('Hi! I am lavender-lite-1b. Tell me what to add, with a date and time.'))+ex2();
+function lite(q){const s=pre(q),n=A(s),r=dr(s),o=nlpR(q),qs=/[?¿]/.test(q)||/^(what|when|who|how|que|qui|quan|quant|quants|quin|quina|quins|quel|quelle|quand|combien|qu['’])/.test(n),adv=Object.keys(MI).some(k=>!/^(add|hi|nx|time|day)$/.test(k)&&MI[k].test(n)),sw=pp(tt('lavender-lite-2b cannot answer that. Switch to Mango One.'))+'<span class="pc ex" data-mm="fried">Mango One · fried-yuca-2</span>';
+if(MI.hi.test(n))return pp(tt('Hi! I am lavender-lite-2b. Tell me what to add, with a date and time.'))+ex2();
 if(MI.add.test(n)||MI.time.test(n)||MI.day.test(n))return mgo(q);
 if(adv)return sw;if(qs)return r?mgo(q):sw;
 return o.title&&(r||o.time)?mgo('add '+q):sw}
 function rM(){const m=mdl(),nm=S.pf&&S.pf.name?pp('<b>'+tt('Hello, {0}!',esc(S.pf.name))+'</b>'):'';
-$('#pm').innerHTML=`<div><h3><em>Mango One</em></h3><span class="mu sm">${tt('Natural language, no AI. Everything runs in your browser.')}</span><div class="sg" id="mqt" style="width:max-content;max-width:100%;margin-top:10px;overflow:auto"><button data-mm="lite" class="${m=='lite'?'on':''}">lavender-lite-1b</button><button data-mm="fried" class="${m=='fried'?'on':''}">Mango One · fried-yuca</button></div><p class="mu sm" style="margin-top:8px">${tt(m=='lite'?'Fast and light. Adds events and answers the basics.':'Our most powerful model. Understands the whole calendar.')}</p></div><div class="mqm" id="mqm">${bub(0,nm+(m=='lite'?pp(tt('Hi! I am lavender-lite-1b. Tell me what to add, with a date and time.'))+ex2():pp(tt('Hi! I am Mango One. Ask me about events, reminders, notes, birthdays, the time or the day.'))+ex()))}${(MH[m]||[]).map(x=>bub(x.u,x.h)).join('')}</div><div id="mqp"></div><div class="bi"><input id="mqi" style="flex:1;padding:13px 20px;border-radius:99px" placeholder="${tt('Ask Mango One about your calendar')}" autocomplete="off"><button class="btn" id="mqg">${tt('Ask')}</button></div>`;const el=$('#mqm');el.scrollTop=el.scrollHeight}
+$('#pm').innerHTML=`<div><h3><em>Mango One</em></h3><span class="mu sm">${tt('Natural language, no AI. Everything runs in your browser.')}</span><div class="sg" id="mqt" style="width:max-content;max-width:100%;margin-top:10px;overflow:auto"><button data-mm="lite" class="${m=='lite'?'on':''}">lavender-lite-2b</button><button data-mm="fried" class="${m=='fried'?'on':''}">Mango One · fried-yuca-2</button></div><p class="mu sm" style="margin-top:8px">${tt(m=='lite'?'Fast and light. Adds events and answers the basics.':'Our most powerful model. Understands the whole calendar.')}</p></div><div class="mqm" id="mqm">${bub(0,nm+(m=='lite'?pp(tt('Hi! I am lavender-lite-2b. Tell me what to add, with a date and time.'))+ex2():pp(tt('Hi! I am Mango One. Ask me about events, reminders, notes, birthdays, the time or the day.'))+ex()))}${(MH[m]||[]).map(x=>bub(x.u,x.h)).join('')}</div><div id="mqp"></div><div class="bi"><input id="mqi" style="flex:1;padding:13px 20px;border-radius:99px" placeholder="${tt('Ask Mango One about your calendar')}" autocomplete="off"><button class="ib" id="mqv" title="Voice"${SR?'':' hidden'}>🎤</button><button class="btn" id="mqg">${tt('Ask')}</button></div>`;const el=$('#mqm');el.scrollTop=el.scrollHeight}
 function ask(q){q=q.trim();if(!q)return;const m=mdl();(MH[m]=MH[m]||[]).push({u:1,h:esc(q)},{u:0,h:m=='lite'?lite(q):mgo(q)});rM();$('#mqi').focus()}
 $('#pm').onclick=e=>{const t=e.target,x=t.closest('[data-e]'),q=t.closest('[data-q]'),mm=t.closest('[data-mm]');if(mm){S.mm=mm.dataset.mm;sv2();rM()}else if(x)open(x.dataset.e);else if(q)ask(q.dataset.q);else if(t.id=='mqg')ask($('#mqi').value)};
 $('#pm').onkeydown=e=>{if(e.key=='Enter'&&e.target.id=='mqi')ask(e.target.value)};
@@ -634,7 +669,7 @@ $('#cm').addEventListener('keydown',e=>{if(e.key=='Enter'&&e.target.id=='cm-n')c
 const WDW='monday|tuesday|wednesday|thursday|friday|saturday|sunday|dilluns|dimarts|dimecres|dijous|divendres|dissabte|diumenge|lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche|dilhun|dimars|dimèrcs|dimercs|dijaus|dijòus|dividres|dimenge';
 const RW=new RegExp('(?<![\\p{L}])(?:every|cada|chaque|tous les|tots els|toti es)\\s+(?=(?:'+WDW+')(?![\\p{L}]))','iu'),
 RE=[['d',/(?<![\p{L}])(every day|daily|cada dia|tots els dies|chaque jour|tous les jours|toti es dies)(?![\p{L}])/iu],['m',/(?<![\p{L}])(every month|monthly|cada mes|chaque mois)(?![\p{L}])/iu],['y',/(?<![\p{L}])(every year|yearly|annually|cada any|chaque ann[ée]e|cada an)(?![\p{L}])/iu],['w',/(?<![\p{L}])(every week|weekly|cada setmana|chaque semaine)(?![\p{L}])/iu]],
-RU=/(?<![\p{L}\d])(?:until|fins a les|fins a la|jusqu[’']à|enquia las?)\s+(\d{1,2})(?::(\d{2}))?\s?h?(?![\p{L}\d])/iu,CAN={rem:'reminders',free:'when am i free',many:'how many events',list:'what do i have'};let LK='';
+RU=/(?<![\p{L}\d])(?:until|fins a les|fins a la|jusqu[’']à|enquia las?)\s+(\d{1,2})(?::(\d{2}))?\s?h?(?![\p{L}\d])/iu,CAN={rem:'reminders',free:'when am i free',many:'how many events',list:'what do i have',note:'notes about',bday:'birthday',con:'phone of',task:'tasks'};let LK='';
 function nlpR(t,fc){let s=t,rep='',et='',m;if(RW.test(s)){s=s.replace(RW,'');rep='w'}else for(const [r,x] of RE)if(x.test(s)){s=s.replace(x,' ');rep=r;break}
 if(m=s.match(RU)){const h=+m[1],mi=+(m[2]||0);if(h<24&&mi<60){et=pad(h)+':'+pad(mi);s=s.replace(RU,' ')}}
 const o=nlp(s,fc);if(rep)o.rep=rep;if(et&&o.time&&et>o.time)o.et=et;return o}
@@ -650,7 +685,7 @@ $('#dl').innerHTML='<div class="str">'+[...Array(35)].map((_,i)=>{const k=iso(ad
 PD.addEventListener('click',e=>{const g=e.target.closest('[data-tg]'),p=e.target.closest('[data-tp]');if(g){$('#ds').value=g.dataset.tg;rDL()}else if(p){const x=TP[+p.dataset.tp],d=dy();d.x=(d.x?d.x+'\n\n':'')+x[1].map((w,i)=>tt(w)+(x[0]=='Gratitude'?' '+(i+1):'')+': ').join('\n');sv2();rD()}});
 /* ===== 3.0 Data: backup (.json), calendar (.ics), contacts (.vcf), diary (.txt) ===== */
 const IC=s=>String(s).replace(/[\\;,]/g,'\\$&').replace(/\n/g,'\\n'),dz=d=>d.replace(/-/g,'');
-function icsOut(){const L=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Lavender//3.1.0//EN','CALSCALE:GREGORIAN'],st=new Date().toISOString().replace(/[-:]|\.\d+/g,'');S.ev.forEach(e=>{L.push('BEGIN:VEVENT','UID:'+e.id+'@lavender','DTSTAMP:'+st,'SUMMARY:'+IC(e.title||'—'));
+function icsOut(l){const L=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Lavender//6.1.0//EN','CALSCALE:GREGORIAN'],st=new Date().toISOString().replace(/[-:]|\.\d+/g,'');(l||S.ev).forEach(e=>{L.push('BEGIN:VEVENT','UID:'+e.id+'@lavender','DTSTAMP:'+st,'SUMMARY:'+IC(e.title||'—'));
 if(e.time){L.push('DTSTART:'+dz(e.start)+'T'+e.time.replace(':','')+'00','DTEND:'+dz(e.end)+'T'+((e.et&&e.start==e.end?e.et:e.time).replace(':',''))+'00')}else L.push('DTSTART;VALUE=DATE:'+dz(e.start),'DTEND;VALUE=DATE:'+dz(iso(ad(pd(e.end),1))));
 if(e.rep)L.push('RRULE:FREQ='+{d:'DAILY',w:'WEEKLY',m:'MONTHLY',y:'YEARLY'}[e.rep]);if(e.loc)L.push('LOCATION:'+IC(e.loc));const nt=e.b.map(b=>(b.t=='c'?(b.d?'[x] ':'[ ] '):'')+b.x).filter(x=>x.trim()).join('\n');if(nt)L.push('DESCRIPTION:'+IC(nt));
 if(e.rm!=null&&e.rm!==''&&e.time)L.push('BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:'+IC(e.title||'—'),'TRIGGER:-PT'+(+e.rm)+'M','END:VALARM');L.push('END:VEVENT')});L.push('END:VCALENDAR');return L.join('\r\n')+'\r\n'}
@@ -659,7 +694,7 @@ un=s=>s.replace(/\\n/gi,'\n').replace(/\\([,;\\])/g,'$1'),dd=v=>v.replace(/^(\d{
 const a=dd(s),time=tm(s),et=z?tm(z):'';let e=/^\d{8}/.test(z)?dd(z):a;if(!time&&e>a)e=iso(ad(pd(e),-1));if(e<a)e=a;
 const rep={DAILY:'d',WEEKLY:'w',MONTHLY:'m',YEARLY:'y'}[(g('RRULE').match(/FREQ=(\w+)/)||[])[1]]||'',ds=un(g('DESCRIPTION'));if(S.ev.some(x=>x.title==sm&&x.start==a&&x.time==time))return;
 S.ev.push({id:nid(),title:sm||'—',type:/birthday|aniversari|anniversaire|cumple/i.test(sm)?'celebration':'event',cal,start:a,end:e,time,et,rep,loc:un(g('LOCATION')),b:ds?ds.split('\n').filter(x=>x.trim()).map(x=>({t:'p',x,d:0})):[],done:0});n++});return n}
-const BKUP=()=>JSON.stringify({app:'lavender',version:'3.1.0',date:new Date().toISOString(),data:S});
+const BKUP=()=>JSON.stringify({app:'lavender',version:'6.1.0',date:new Date().toISOString(),data:S});
 function restore(t){let j,d;try{j=JSON.parse(t);d=j&&j.app=='lavender'?j.data:null}catch(e){}if(!d||!Array.isArray(d.ev)||!Array.isArray(d.cals)||!d.cals.length)return toast(tt('That file could not be read.'));if(!confirm(tt('Replace all your current data with this backup?')))return;
 Object.keys(S).forEach(k=>delete S[k]);Object.assign(S,{ty:{event:1,celebration:1,task:1,other:1},q:{},f:{v:{}},pts:0,en:1,tr:1,sp:1,mo:1,bg:'lavender',dy:{},ct:[]},d);S.ac=S.cals.some(c=>c.id==S.ac)?S.ac:S.cals[0].id;sv2();toast(tt('Backup restored'));applyBg();setLang(S.lang||'en');tab('cal')}
 function rK(){const n=Object.keys(S.dy).filter(k=>has(S.dy[k])).length,row=(l,k,i)=>`<div class="rw"><b style="min-width:190px;font-weight:500">${l}</b><button class="ib" data-x="${k}">${tt('Export')}</button>${i?`<label class="ib" style="cursor:pointer">${tt('Import')}<input type="file" hidden accept=".${i}" data-i="${i}"></label>`:''}</div>`;
@@ -674,7 +709,6 @@ function fold(){const sd=$('#side'),secs=[];let c=null;S.fo=S.fo||{};[...sd.chil
 sd.innerHTML='';secs.forEach((x,i)=>{const d=document.createElement('details'),s=document.createElement('summary');d.className='fd';d.dataset.f=i;d.open=i==0?S.fo[0]!==0:!!S.fo[i];s.textContent=x.h;d.append(s,...x.b);sd.append(d)})}
 const pfCard=()=>{const p=S.pf||{};return `<div class="pfc"><div class="pfa" data-pfe style="background:${p.color||'var(--g)'}">${esc(p.emoji||(p.name&&p.name.trim()[0].toUpperCase())||'🙂')}</div><div data-pfe style="cursor:pointer"><b>${esc(p.name||tt('Profile'))}</b><span class="mu sm">${esc(p.motto||tt(lvl()))}</span></div><button class="ib" data-pfe title="${tt('Edit profile')}">✎</button><button class="ib sxc" data-sxc>✕</button></div>`};
 function pfUpd(){const p=S.pf||{},b=$('#pft');if(b){b.style.background=p.color||'';b.textContent=p.emoji||((p.name&&p.name.trim()[0])||'🙂').toUpperCase()}}
-{const o=side;side=()=>{o();$('#side').insertAdjacentHTML('afterbegin',pfCard());pfUpd()}}
 $('#side').addEventListener('toggle',e=>{const d=e.target;if(d.dataset&&d.dataset.f!=null){S.fo[d.dataset.f]=d.open?1:0;sv2()}},true);
 document.addEventListener('toggle',e=>{const d=e.target;if(d.dataset&&d.dataset.in){(S.in=S.in||{})[d.dataset.in]=d.open?0:1;sv2()}},true);
 const EMO=['','🌸','🦊','🐻','🐼','🦉','🐝','🌿','🍁','❄️','🌙','☕','📚','🎧','🌈','🐙','🍋'];let PFD=null;
@@ -687,13 +721,76 @@ PF.addEventListener('click',e=>{const t=e.target,em=t.closest('[data-em]'),k=t.c
 PF.addEventListener('input',e=>{const t=e.target,m={'pf-n':'name','pf-m':'motto','pf-b':'bd'}[t.id];if(m){PFD[m]=t.value;pfPrev()}else if(t.id=='pf-c'){PFD.color=t.value;$$('#pf-s .sw').forEach(b=>b.classList.remove('on'));pfPrev()}});
 PF.addEventListener('keydown',e=>{if(e.key=='Enter'&&e.target.id=='pf-n')pfSave();else if(e.key=='Escape'){PF.classList.remove('on');PFD=null}});
 document.addEventListener('click',e=>{if(e.target.closest('[data-pfe],#pft'))pfOpen();else if(e.target.closest('[data-sxc]'))$('#side').classList.remove('open')});
-side();pfUpd();
+pfUpd();
 /* ===== 3.1 fixes ===== */
 {const r0=render;render=()=>{r0();$('#view').dataset.v=view}}
 $('#opt').onclick=()=>$('#side').classList.toggle('open');
 document.addEventListener('click',e=>{const s=$('#side');if(s.classList.contains('open')&&!e.composedPath().some(n=>['side','opt','pf','cm','md','tov'].includes(n.id)))s.classList.remove('open')});
 document.addEventListener('keydown',e=>{if(e.key=='Escape')$('#side').classList.remove('open')});
-render();
+/* ===== 3.1.1 - 6.1.0 ===== */
+S.fo=S.fo||{};S.hb=S.hb||[];
+const SR=window.SpeechRecognition||window.webkitSpeechRecognition,hhmm=m=>pad(Math.floor(m/60))+':'+pad(m%60),lev=(a,b)=>{const m=[...Array(b.length+1)].map((_,i)=>[i]);for(let j=1;j<=a.length;j++)m[0][j]=j;for(let i=1;i<=b.length;i++)for(let j=1;j<=a.length;j++)m[i][j]=Math.min(m[i-1][j]+1,m[i][j-1]+1,m[i-1][j-1]+(b[i-1]==a[j-1]?0:1));return m[b.length][a.length]};
+let IP=null,REC=null,DG=null;addEventListener('beforeinstallprompt',e=>{e.preventDefault();IP=e;side()});
+if('serviceWorker' in navigator&&/^https?:/.test(location.protocol))navigator.serviceWorker.register('sw.js').catch(()=>{});
+/* quests + tour */
+Q.push({id:'diary',t:'Dear diary',d:'Write your first Dietary entry.',p:10,f:()=>Object.keys(S.dy).some(k=>has(S.dy[k]))},{id:'ctc',t:'Know your people',d:'Add your first contact.',p:10,f:()=>S.ct.length>0},{id:'prof',t:'Make it yours',d:'Set your name in your profile.',p:10,f:()=>!!(S.pf&&S.pf.name)},
+{id:'hab',t:'Small steps',d:'Tick a habit three days in a row.',p:15,f:()=>S.hb.some(h=>{let n=0,d=tdy();while(h.d&&h.d[iso(d)]){n++;d=ad(d,-1)}return n>=3})});
+/* 3.2 share */
+const evTxt=e=>[e.title,fm(e.start)+(e.end!=e.start?' – '+fm(e.end):'')+(e.time?' · '+e.time+(e.et?'–'+e.et:''):''),e.loc,...(e.b||[]).map(b=>b.x).filter(x=>x&&x.trim())].filter(Boolean).join('\n');
+async function shareEv(e){const t=evTxt(e);if(navigator.share){try{await navigator.share({title:e.title,text:t});return}catch(x){if(x.name=='AbortError')return}}try{await navigator.clipboard.writeText(t);toast(tt('Copied to clipboard'))}catch(x){dlf('event.txt',t)}}
+$('#md').addEventListener('click',e=>{if(e.target.id=='m-sh'&&E)shareEv(E);else if(e.target.id=='m-ics'&&E)dlf((E.title||'event')+'.ics',icsOut([E]),'text/calendar')});
+function weekImg(){const w=ws(cur),C=getComputedStyle(document.documentElement),ink=C.getPropertyValue('--ink').trim()||'#222',bg=C.getPropertyValue('--l1').trim()||'#fff',ac=C.getPropertyValue('--ac').trim()||'#8b6bf0',R=[...Array(7)].map((_,i)=>{const k=iso(ad(w,i));return[k,evOn(k)]}),H=R.reduce((a,r)=>a+44+Math.max(1,r[1].length)*30,90),c=document.createElement('canvas');c.width=900;c.height=H;const x=c.getContext('2d');x.fillStyle=bg;x.fillRect(0,0,900,H);x.fillStyle=ac;x.font='600 30px system-ui,sans-serif';x.fillText('Lavender · '+fm(iso(w))+' – '+fm(iso(ad(w,6))),30,52);let y=90;
+R.forEach(([k,L])=>{x.fillStyle=ink;x.font='600 20px system-ui,sans-serif';x.fillText(ld(pd(k),LD),30,y+20);y+=34;if(!L.length){x.globalAlpha=.4;x.font='16px system-ui,sans-serif';x.fillText('–',30,y+16);x.globalAlpha=1;y+=30}L.forEach(e=>{x.fillStyle=clr(e);x.fillRect(30,y,6,22);x.fillStyle=ink;x.font='17px system-ui,sans-serif';x.fillText((e.time?e.time+'  ':'')+e.title,48,y+17);y+=30});y+=10});
+c.toBlob(async b=>{const f=new File([b],'lavender-week.png',{type:'image/png'});if(navigator.canShare&&navigator.canShare({files:[f]})){try{await navigator.share({files:[f]});return}catch(e){if(e.name=='AbortError')return}}const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='lavender-week.png';a.click()})}
+/* 4.0 notifications */
+const NF=new Set();
+function rmTick(){if(!S.nt)return;const T=iso(tdy()),n=new Date(),m=n.getHours()*60+n.getMinutes();evOn(T).forEach(e=>{if(!e.time||e.rm==null||e.rm==='')return;const f=mn(e.time)-(+e.rm),key=e.id+T;if(m>=f&&m<mn(e.time)+1&&!NF.has(key)){NF.add(key);const b=e.title+' · '+e.time;if(window.Notification&&Notification.permission=='granted')new Notification('Lavender',{body:b,icon:'icon.svg'});else toast(b)}})}
+setInterval(rmTick,30000);
+async function ntToggle(){if(S.nt)S.nt=0;else{if(window.Notification&&Notification.permission=='default')await Notification.requestPermission();S.nt=1}sv2();side()}
+/* 6.1 themes */
+TH.push(['sakura','Sakura','linear-gradient(135deg,#ffe3ec,#f49ab8)'],['meadow','Meadow','linear-gradient(135deg,#e6f4cf,#9acd4a)'],['citrus','Citrus','linear-gradient(135deg,#fff0b8,#f7c534)'],['lagoon','Lagoon','linear-gradient(135deg,#d2f3ef,#3fcbc2)'],['dusk','Dusk','linear-gradient(135deg,#3a1a44,#ff8f6b)'],['snow','Snowfall','linear-gradient(135deg,#172338,#9ec8f0)'],['custom','Custom','conic-gradient(#ff8f6b,#f7c534,#3fcbc2,#8b6bf0,#ff8f6b)']);
+const TG=[['Autumn & winter',['maple','harvest','frost','embers','pine']],['Spring & summer',['sakura','meadow','citrus','lagoon','dusk']],['Special',['rain','snow','custom']]];
+function thGroup(){const sw=$$('#side button[data-bg]');if(!sw.length)return;const by={},used=TG.flatMap(g=>g[1]),cl=TH.map(x=>x[0]).filter(i=>!used.includes(i)),nm=(TH.find(x=>x[0]==S.bg)||['','Lavender'])[1];sw.forEach(b=>by[b.dataset.bg]=b.outerHTML);
+sw[0].parentElement.innerHTML=`<details class="fd" data-f="th"${S.fo.th?' open':''}><summary>${tt(nm)}</summary>${[['Classic',cl],...TG].map(g=>`<div class="mu sm" style="margin:8px 0 4px">${tt(g[0])}</div><div class="rw" style="margin:0">${g[1].map(i=>by[i]||'').join('')}</div>`).join('')}</details>`}
+function cuApply(){const R=document.documentElement;['--ac','--g','--b1','--b2','--l1','--l2','--l3','--l4','--ink','--mu','--cd','--cd2','--ln'].forEach(k=>R.style.removeProperty(k));if(S.bg!='custom'||!S.cu)return;const{ac,bg,dark}=S.cu,m=(c,p,w)=>`color-mix(in srgb,${c} ${p}%,${w})`,set=(k,v)=>R.style.setProperty(k,v);
+set('--ac',ac);set('--g',`linear-gradient(120deg,${ac},${m(ac,60,'#fff')})`);set('--b1',bg);set('--b2',m(ac,55,'#fff'));
+if(dark){set('--l1',m(bg,28,'#0c0a14'));set('--l2',m(bg,38,'#0c0a14'));set('--l3',m(bg,33,'#0c0a14'));set('--l4',m(ac,22,'#0c0a14'));set('--ink','#f4f0ff');set('--mu',m(bg,50,'#cfc8e8'));set('--cd',m(bg,30,'rgba(12,10,20,.6)'));set('--cd2',m(bg,34,'#0c0a14'));set('--ln','rgba(255,255,255,.2)')}
+else{set('--l1',m(bg,10,'#fff'));set('--l2',m(bg,26,'#fff'));set('--l3',m(bg,18,'#fff'));set('--l4',m(ac,16,'#fff'))}}
+{const a=applyBg;applyBg=()=>{a();cuApply()}}
+const mt=()=>{const c=S.cu||{};return `<details class="fd" data-f="mt"${S.fo.mt?' open':''}><summary>${tt('More tools')}</summary><div class="rw"><button class="ib" data-wk>${tt('Share this week')}</button><button class="ib" data-pr>${tt('Print / PDF')}</button></div><div class="rw"><span>${tt('Notifications')}</span><button class="ib" data-nt>${S.nt?tt('On'):tt('Off')}</button>${IP?`<button class="ib" data-ip>${tt('Install app')}</button>`:''}</div><div class="rw"><span>${tt('Custom theme')}</span><input type="color" id="cu-a" value="${c.ac||'#8b6bf0'}"><input type="color" id="cu-b" value="${c.bg||'#c8b6ff'}"><label><input type="checkbox" id="cu-d"${c.dark?' checked':''}> ${tt('Night')}</label></div></details>`};
+{const o=side;side=()=>{o();$('#side').insertAdjacentHTML('afterbegin',pfCard());thGroup();$('#side').insertAdjacentHTML('beforeend',mt());pfUpd()}}
+$('#side').addEventListener('click',e=>{const t=e.target;if(t.closest('[data-wk]'))weekImg();else if(t.closest('[data-pr]')){$('#side').classList.remove('open');setTimeout(()=>print(),150)}else if(t.closest('[data-nt]'))ntToggle();else if(t.closest('[data-ip]')&&IP){IP.prompt();IP=null;side()}});
+$('#side').addEventListener('input',e=>{if(!/^cu-/.test(e.target.id))return;S.cu={ac:$('#cu-a').value,bg:$('#cu-b').value,dark:$('#cu-d').checked?1:0};S.bg='custom';sv2();applyBg()});
+/* 4.1 Today + 5.0 habits and time blocks */
+const fs=(k,dur,from)=>{const B=evOn(k).filter(isT).map(e=>[mn(e.time),Math.max(mn(e.time)+30,e.et?mn(e.et):mn(e.time)+60)]).sort((a,b)=>a[0]-b[0]),F=[];let c=Math.max(540,from||0);B.forEach(([a,z])=>{if(a-c>=dur)F.push([c,a]);c=Math.max(c,z)});if(1140-c>=dur)F.push([c,1140]);return F};
+function mkBlock(k,s,dur){const e={id:nid(),title:tt('Focus'),type:'other',cal:ac().id,start:k,end:k,time:hhmm(s),et:hhmm(s+dur),b:[],done:0,rep:''};S.ev.push(e);S.f.smart=1;checkQ();sv2();toast(tt('Block added.'));return e}
+function blockAt(dur){const n=new Date(),from=Math.ceil((n.getHours()*60+n.getMinutes())/30)*30;for(let i=0;i<7;i++){const k=iso(ad(tdy(),i)),F=fs(k,dur,i?0:from);if(F.length){mkBlock(k,F[0][0],dur);after();return twr()}}toast(tt('No free time found.'))}
+const edy=k=>S.dy[k]||(S.dy[k]={m:-1,e:0,s:'',w:0,x:'',g:'',p:[]});
+function twr(){S.hb=S.hb||[];const T=iso(tdy()),d=S.dy[T]||{m:-1,w:0},L=[...evOn(T)].sort((a,b)=>(a.time||'')<(b.time||'')?-1:1),b=bds()[0],tk=S.ev.filter(e=>e.type=='task'&&!e.done).length,wk=[...Array(7)].map((_,i)=>iso(ad(ws(tdy()),i)));
+$('#tw').innerHTML=`<h3 style="font-size:22px;margin:0 0 6px">${ld(tdy(),LD)}</h3>${L.length?L.slice(0,6).map(e=>`<div class="tr" data-e="${e.id}" style="cursor:pointer"><b style="font-weight:500;min-width:48px;color:var(--mu)">${e.time||'·'}</b><span>${esc(e.title)}</span></div>`).join(''):`<p class="mu">${tt('Nothing planned for {0}.',tt('Today').toLowerCase())}</p>`}
+<h4>${tt('Mood')}</h4><div class="md2">${MD.map((m,i)=>`<button data-tm="${i}" class="${d.m==i?'on':''}">${m}</button>`).join('')}</div><div class="tr"><span>${tt('Water')}</span><button class="ib" data-tw="-1">−</button><b>${d.w||0}</b><button class="ib" data-tw="1">+</button></div>
+<h4>${tt('Habits')}</h4>${S.hb.map(h=>`<div class="tr"><input type="checkbox" data-hc="${h.id}"${h.d&&h.d[T]?' checked':''}><span>${esc(h.n)}</span><button class="ib" data-hg="${h.id}">${wk.filter(k=>h.d&&h.d[k]).length}/${h.g}</button><u data-hx="${h.id}" style="cursor:pointer;opacity:.5">×</u></div>`).join('')}
+<div class="tr"><input id="hn" placeholder="${tt('New habit')}" maxlength="30" style="flex:1;min-width:0;padding:8px 12px;border-radius:12px;border:1px solid var(--ln);background:var(--cd);color:inherit"><button class="ib" data-ha>+</button></div>
+<h4>${tt('Time block')}</h4><div class="rw" style="margin:0"><button class="ib" data-bt="30">30 min</button><button class="ib" data-bt="60">1 h</button><button class="ib" data-bt="120">2 h</button></div>${b?`<p class="mu sm" style="margin-top:14px">🎂 ${esc(b[1])} · ${fm(b[0])}</p>`:''}<p class="mu sm">${tk} ${tt('Open tasks:').replace(':','')}</p>`}
+$('#twb').onclick=()=>{$('#side').classList.remove('open');twr();$('#tw').classList.toggle('open')};$('#opt').addEventListener('click',()=>$('#tw').classList.remove('open'));
+document.addEventListener('click',e=>{const s=$('#tw');if(s.classList.contains('open')&&!e.composedPath().some(n=>['tw','twb','md','tov'].includes(n.id)))s.classList.remove('open')});
+document.addEventListener('keydown',e=>{if(e.key=='Escape')$('#tw').classList.remove('open')});
+$('#tw').addEventListener('click',e=>{const t=e.target,g=a=>t.closest('['+a+']'),T=iso(tdy());let x;
+if(x=g('data-e'))open(x.dataset.e);else if(x=g('data-tm')){const d=edy(T);d.m=d.m==+x.dataset.tm?-1:+x.dataset.tm;sv2();twr()}else if(x=g('data-tw')){const d=edy(T);d.w=Math.max(0,(d.w||0)+ +x.dataset.tw);sv2();twr()}
+else if(x=g('data-hg')){const h=S.hb.find(y=>y.id==x.dataset.hg);h.g=h.g%7+1;sv2();twr()}else if(x=g('data-hx')){S.hb=S.hb.filter(y=>y.id!=x.dataset.hx);sv2();twr()}
+else if(g('data-ha')){const v=$('#hn').value.trim();if(v){S.hb.push({id:nid(),n:v,g:7,d:{}});sv2();twr()}}else if(x=g('data-bt'))blockAt(+x.dataset.bt)});
+$('#tw').addEventListener('change',e=>{const c=e.target.closest('[data-hc]');if(!c)return;const h=S.hb.find(x=>x.id==c.dataset.hc),T=iso(tdy());h.d=h.d||{};if(c.checked)h.d[T]=1;else delete h.d[T];sv2();twr()});
+$('#tw').addEventListener('keydown',e=>{if(e.key=='Enter'&&e.target.id=='hn')$('#tw [data-ha]').click()});
+/* 5.0 drag and drop in month view */
+{const r1=render;render=()=>{r1();$$('#view .ch[data-e]').forEach(c=>c.draggable=true)}}
+const V=$('#view');V.addEventListener('dragstart',e=>{const c=e.target.closest&&e.target.closest('.ch[data-e]'),m=c&&c.closest('.mc[data-d]');if(c&&m){DG={id:c.dataset.e,from:m.dataset.d};e.dataTransfer.setData('text/plain',c.dataset.e);e.dataTransfer.effectAllowed='move'}});
+V.addEventListener('dragover',e=>{if(DG&&e.target.closest('.mc[data-d]'))e.preventDefault()});
+V.addEventListener('drop',e=>{const c=e.target.closest('.mc[data-d]');if(!c||!DG)return;e.preventDefault();const ev=S.ev.find(x=>x.id==DG.id),dd=Math.round((pd(c.dataset.d)-pd(DG.from))/864e5);DG=null;if(!ev||!dd)return;ev.start=iso(ad(pd(ev.start),dd));ev.end=iso(ad(pd(ev.end),dd));sv2();after()});
+/* 5.1 planner + 6.0 voice */
+Object.assign(MI,{conf:/(conflict|overlap|clash|solap|conflit|chevauch|coincid)/,plan:/(find|suggest|propose|busca|troba|proposa|cherche|trouve|propos).*(time|temps|hora|moment|slot|franja|creneau|ora\b)/});
+$('#pm').addEventListener('click',e=>{const t=e.target,b=t.closest('[data-bk]');if(b){const[k,s,d]=b.dataset.bk.split('|');mkBlock(k,+s,+d);b.textContent='✓ '+b.textContent;b.removeAttribute('data-bk')}else if(t.closest('#mqv'))mic()});
+function mic(){if(REC){REC.stop();return}const r=REC=new SR();r.lang={ca:'ca-ES',fr:'fr-FR',oc:'ca-ES',en:'en-US'}[S.lang]||'en-US';r.interimResults=false;r.onresult=e=>ask(e.results[0][0].transcript);r.onend=()=>{REC=null;const b=$('#mqv');b&&b.classList.remove('on')};$('#mqv').classList.add('on');r.start()}
+applyBg();render();rmTick();
 /* landing demo */
 (async()=>{const P=()=>LPS[S.lang]||LPS.en,el=$('#hb'),hp=$('#hp');
 for(let i=0;;i=(i+1)%4){const s=P()[i];for(let c=1;c<=s.length;c++){el.textContent=s.slice(0,c);await sl(52)}
