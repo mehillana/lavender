@@ -1,24 +1,10 @@
-# Changelog
+## - 2026-10-12
 
-All notable changes to this project will be documented in this file.
-
-## - Current Version
 ### Added
-*   **Integrated Ecosystem:** Incorporation of `Dietary` and `Contacts` modules, transforming the app into a comprehensive personal ecosystem that coordinates with the calendar.
-*   **Mango One Engine:** Deployment of our custom natural-language processing engine, allowing secure local parsing directly in the browser.
-*   **Full Responsiveness:** The entire user interface is now fully responsive, adapting seamlessly to mobile, tablet, and desktop screens.
-*   **Advanced Features:** Added interface shortcuts, distinct time categories (Event, Celebration, Multi-day task, Other), and guiding quests to improve habit building.
+- **Options Menu:** Introduced a new `⚙ Options` button directly in the main view toolbar for quick access to settings, local data, and configuration.
+- **New Soft Themes:** Expanded the theme collection with brand-new visual themes, allowing more customization from light pastel tones to dark modes.
 
-##
-### Added
-*   **Multilingual Support:** Expanded language integration to include Catalan, French, and Aranese alongside the original English.
-
-### Known Issues
-*   **Consistency Bugs:** Unresolved logical discrepancies when syncing data across different layouts and sessions.
-*   **Movement & Correction Flaws:** Persistent visual jitter and placement issues during calendar entry movements and view switches.
-
-##
-### Added
-*   **Original Base Launch:** Initial deployment of the application containing fundamental layout parameters and core timing logic.
-*   **Day View:** Simple time organization strictly focused on a day-by-day agenda visualization.
-*   **Baseline Environment:** Elementary natural language processing capabilities, restricted to a singular calendar setup and English-only support.
+### Changed
+- **Responsive Design:** Completely overhauled the layout to be fully responsive, ensuring optimal viewing and scheduling experiences across mobile, tablet, and desktop devices.
+- **Structure Improvements:** Enhanced core navigation and layout structure to make timeline reading and multi-day task management more intuitive.
+- **UI Refinements:** Cleaned up padding, alignments, and visual hierarchy across the main dashboard.
