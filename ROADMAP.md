@@ -1,164 +1,179 @@
 # Lavender Roadmap
 
-Strategic vision for Lavender's evolution. Updated regularly as priorities shift.
+Strategic vision for Lavender's evolution, from the current v3.1.0 towards a full suite.
+
+---
 
 ## Current Status
 
-**v0.1.0** — Core calendar with smart parsing, five views, repeating events, themes and quests.
+**v3.1.0** — Mobile-first redesign, scrollless calendar, collapsible options, guided tours, profiles, autumn & winter themes, rain theme, lite & fried-yuca models.
 
 ---
 
 ## Version Milestones
 
-### v0.2.0 — **Polish & Interactivity** (Next)
+### v3.1.1 — **Patch: Mobile Refinement & New Quests**
 
-**Goal:** Smooth interactions and rich visual feedback.
+**Focus:** Bug fixes and UX polish after real mobile testing.
 
-- [ ] **Drag and resize events** — Reorganize your calendar by dragging
-- [ ] **Event colours** — Custom colours per event or per type
-- [ ] **Improved mobile responsiveness** — Better touch interactions and layout
-- [ ] **Visual polish** — Animations, transitions and feedback
-- [ ] **Bug fixes from v0.1** — Stability and edge cases
+- [ ] Mobile bug fixes from real device testing
+- [ ] Updated onboarding tour for new design
+- [ ] New quests for Dietary, Contacts, and Profile features
+- [ ] Performance optimizations on mobile
 
-**Timeline:** 4-6 weeks  
+**Status:** Ready for release  
 **Priority:** High
 
 ---
 
-### v0.3.0 — **Data Portability & Backup**
+### v3.2.0 — **Minor: Sharing & Portability**
 
-**Goal:** Full control over your data with easy export and import.
+**Focus:** Export events and share calendar data in multiple formats.
 
-- [ ] **Import from .ics files** — Load calendars from other apps
-- [ ] **Export to .ics** — Share calendar data portably
-- [ ] **Export to JSON** — Full data backup in Lavender's native format
-- [ ] **One-click backup** — Download all your calendar data
-- [ ] **Import JSON** — Restore from backups
-- [ ] **Clear data with confirmation** — Safer data management
+- [ ] Export single event as ICS
+- [ ] Export week as ICS
+- [ ] Export as image (PNG/JPG)
+- [ ] Export as PDF
+- [ ] Copy event as text
+- [ ] Share links for events/weeks
 
 **Timeline:** 2-3 weeks  
 **Priority:** High
 
 ---
 
-### v0.4.0 — **Sharing & Collaboration**
+### v4.0.0 — **Major: Notifications & Installability**
 
-**Goal:** Safely share calendars with others while preserving privacy.
+**Focus:** Real browser notifications and offline-first PWA experience.
 
-- [ ] **Read-only share links** — Generate shareable calendar links
-- [ ] **Calendar sharing settings** — Choose what to share (public/private)
-- [ ] **Shared event comments** — Notes between shared users
-- [ ] **Merge shared calendars** — Import someone else's events
-- [ ] **Permission granularity** — Share by date range or event type
+- [ ] Browser notifications (real system alerts)
+- [ ] Installable app (PWA — add to home screen)
+- [ ] Service Worker for full offline functionality
+- [ ] Sync queue for offline changes
+- [ ] Install prompts and native-like UX
 
-**Timeline:** 6-8 weeks  
+**Timeline:** 4-5 weeks  
+**Priority:** High
+
+---
+
+### v4.1.0 — **Minor: Today Panel & Widgets**
+
+**Focus:** Quick access and at-a-glance information.
+
+- [ ] "Today" panel — Consolidated view of today's events
+- [ ] Widget support — Quick calendar widgets
+- [ ] Notification badges — Unread event count
+- [ ] Quick add from widget
+
+**Timeline:** 2-3 weeks  
 **Priority:** Medium
 
 ---
 
-### v0.5.0 — **Smart Notifications & Reminders**
+### v5.0.0 — **Major: Planning & Productivity**
 
-**Goal:** Keep you informed without distraction.
+**Focus:** Habits, goals, time blocking, and drag-to-reorganize.
 
-- [ ] **Browser notifications** — Alerts even when tab is closed
-- [ ] **Notification settings** — Per-event or global reminder timing
-- [ ] **Sound alerts** — Optional audio cues
-- [ ] **Snooze reminders** — "Remind me in 5 minutes"
-- [ ] **Email-style digests** — Daily or weekly summaries (local only)
+- [ ] **Habits & Goals** — Track habits linked to quests and missions
+- [ ] **Time blocks** — Schedule focused work periods
+- [ ] **Drag and resize events** — Reorganize calendar visually
+- [ ] **Goal tracking** — Progress towards personal objectives
+- [ ] **Habit streaks** — Motivation through consistency visualization
+
+**Timeline:** 6-8 weeks  
+**Priority:** High
+
+---
+
+### v5.1.0 — **Minor: Intelligent Time Detection** (fried-yuca model)
+
+**Focus:** AI-powered free time and conflict detection.
+
+- [ ] **Find free time** — Suggest available slots for new events
+- [ ] **Conflict detection** — Alert when events overlap or clash
+- [ ] **Time recommendations** — Best times for tasks based on patterns
+- [ ] **Smart scheduling** — Auto-suggest meeting times
 
 **Timeline:** 3-4 weeks  
 **Priority:** Medium
 
 ---
 
-### v0.6.0 — **Advanced Search & Filtering**
+### v6.0.0 — **Major: Next Generation Models**
 
-**Goal:** Find what you need instantly.
+**Focus:** Completely redesigned parsing engine with voice input and chained questions.
 
-- [ ] **Advanced search** — Search by date range, person, type, tags
-- [ ] **Saved filters** — Favorite views (e.g., "All birthdays", "Joan's events")
-- [ ] **Tagging system** — Organize events with custom tags
-- [ ] **Search history** — Quick access to recent searches
-- [ ] **Full-text search** — Search inside notes and descriptions
+- [ ] **New parsing engine** — Faster, smarter, more accurate
+- [ ] **Voice dictation** — Speak to create events
+- [ ] **Chained questions** — Clarify ambiguous input naturally
+- [ ] **Context awareness** — Learn from your patterns
+- [ ] **Multiple language improvements** — Better Catalan, French, Aranese support
+- [ ] **Custom model naming** — Community decides new model names
+
+**Timeline:** 8-10 weeks  
+**Priority:** High
+
+---
+
+### v6.1.0 — **Minor: Expanded Themes & Theme Creator**
+
+**Focus:** Seasonal themes and personalization.
+
+- [ ] **Spring theme pack**
+- [ ] **Summer theme pack**
+- [ ] **Custom theme creator** — Design your own themes
+- [ ] **Animated theme** — Second animated theme (e.g., falling snow)
+- [ ] **Theme sharing** — Community theme library
 
 **Timeline:** 3-4 weeks  
 **Priority:** Medium
 
 ---
 
-### v0.7.0 — **Integrations & Attachments**
+### v7.0.0 — **Major: Lavender Suite & Design Renewal**
 
-**Goal:** Connect Lavender to your other tools.
+**Focus:** Unified ecosystem linking Calendar, Contacts, Dietary, and Mango One.
 
-- [ ] **Attachments** — Add files, images or links to events
-- [ ] **Calendar integrations** — Sync with Google Calendar, Outlook (read-only initially)
-- [ ] **Contact integrations** — Link phone contacts to people in your calendar
-- [ ] **Weather integration** — Show weather forecasts on events
-- [ ] **Location maps** — Display event locations on maps
+- [ ] **Lavender Suite** — Seamless integration across apps
+  - Calendar ↔ Contacts (link people to events)
+  - Calendar ↔ Dietary (meal planning, nutritional reminders)
+  - Calendar ↔ Mango One (focus sessions, productivity)
+- [ ] **Design renewal** — Modern, cohesive UI across all modules
+- [ ] **Unified data** — Single source of truth for shared data
+- [ ] **Cross-app quests** — Missions spanning multiple apps
+- [ ] **Suite settings** — Central configuration
 
-**Timeline:** 6-8 weeks  
-**Priority:** Low
+**Timeline:** 10-12 weeks  
+**Priority:** High
 
----
-
-### v0.8.0 — **Offline-First Enhancements**
-
-**Goal:** Work seamlessly with or without internet.
-
-- [ ] **Service Worker support** — Fully functional offline
-- [ ] **PWA (Progressive Web App)** — Installable on desktop and mobile
-- [ ] **Sync queue** — Queue changes when offline, sync when online
-- [ ] **Conflict resolution** — Handle local edits when syncing later
-
-**Timeline:** 4-6 weeks  
-**Priority:** Medium
+**Note:** This represents the maturation of Lavender into a full personal ecosystem.
 
 ---
 
-### v1.0.0 — **Stable Release & Cloud Sync** (Future)
+## Post-7.0.0 Vision
 
-**Goal:** Multi-device sync while maintaining privacy-first principles.
+### The "Max" Line (v1.0.0max → v2.3.3max)
 
-- [ ] **Optional cloud sync** — End-to-end encrypted sync across devices
-- [ ] **Account-optional authentication** — Sign in to enable sync (no tracking)
-- [ ] **Device management** — See and revoke access from other devices
-- [ ] **Backup to cloud** — Encrypted backups
-- [ ] **Performance optimization** — Handle large calendars (1000+ events)
-
-**Timeline:** 3-4 months  
-**Priority:** Low (breaking change)
+After v7.0.0 is stabilized, a parallel "max" versioning line will track extended features, enterprise variants, or community editions.
 
 ---
 
-## Under Consideration
+## Known Limitations (Current)
 
-**Low priority or experimental ideas:**
-
-- Dark mode refinements and custom themes
-- Calendar analytics — Event statistics and patterns
-- Habit tracking — Link habits to events
-- AI-powered summaries — Smart event suggestions (local only)
-- Calendar templates — Pre-made event sets for planning
-- Buddy system — Accountability partnerships with shared visibility
-- Native apps — Electron/Cordova wrappers
-- Calendar import from photos — Event extraction from images
+- Reminders only appear in-tab (fixed in v4.0.0)
+- No data sync between devices (roadmap for later)
+- Mobile UX still being perfected (improving through v3.1.1)
+- Voice input not yet available (coming in v6.0.0)
 
 ---
 
-## Known Issues
+## Contributing
 
-- Reminders only work while tab is open
-- Astronomical dates (moon phases, seasons) can be off by a day
-- No data sync between browsers or devices
-- Mobile experience needs refinement
-
----
-
-## Contributing to the Roadmap
-
-Have an idea? Open an issue to discuss it. High-impact, low-effort features are prioritized first.
+Open an issue to discuss ideas, report bugs, or propose features. Keep PRs focused and well-tested.
 
 ---
 
 **Last updated:** October 12, 2026  
-**Next review:** When v0.2.0 is released
+**Current version:** 3.1.0  
+**Next release:** 3.1.1 (patch)
