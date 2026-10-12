@@ -1,0 +1,1 @@
+{"name":"Lavender","short_name":"Lavender","description":"The calendar that listens.","start_url":"./","scope":"./","display":"standalone","background_color":"#f6f0ff","theme_color":"#8b6bf0","icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
