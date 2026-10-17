@@ -1,95 +1,84 @@
-# Lavender
+# Lavender — The Open-Source Calendar That Listens
 
-The open-source calendar that listens.
+> **v8.0.0 (v8chaufa) · Powered by Mangosoft**
 
-Type one sentence and Lavender turns it into an event, a celebration or a multi-day task. Notes live inside events, every person gets their own calendar, and small quests teach you the app as you go.
+Lavender is a privacy-first, mobile-friendly calendar that runs completely in your browser. No accounts, no ads, and no cloud servers. Everything is processed locally on your device.
 
-Lavender understands English, Catalan, French and Aranese.
+With the release of the **v8chaufa** engine, Lavender transitions into a full personal productivity suite, introducing **Mangosoft**—a local intelligence ecosystem that links your Calendar, Contacts, Dietary Planner, and Diary through natural language.
 
-**No account. No ads. No tracking. Your data stays in your browser.**
+---
 
-## Features
+## Talk to your calendar. *Watch it move.*
 
-- **Smart bar** — Describe what you want in plain text and Lavender finds the date, time, person and type. It works locally without servers or cloud models.
-  - Dinner with Marta Friday 8pm
-  - Joan's birthday Oct 28
-  - Launch plan Monday to Friday
-  - Remember to renew passport next Tuesday
+Meet **chaufa**, the local engine behind Mangosoft. Give it a long, messy instruction and it books, moves, and updates your events, contacts, and diary live, right on your calendar screen.
 
-- **Five views** — Day, week, month, year and a running agenda
+> *"Move dinner with Marta to Friday at 9pm, add her birthday to the calendar and log mood happy."*
+> 
+> * ✓ **Moved Dinner with Marta** · Fri 21:00
+> * ✓ **Birthday of Marta added** to the calendar
+> * ✓ **Diary updated** · mood 😄
 
-- **Four kinds of time** — Events, celebrations, multi-day tasks and a free "other" category
+---
 
-- **Notes blocks inside events** — Headings, text, checklists and reminders, all editable and reorderable
+## Two Models. One Goal: Your Time.
 
-- **A calendar per person** — Give each person a colour, show or hide them, and use the legend to filter by type
+Mangosoft runs two highly optimized local processing engines tailored to your pace:
 
-- **Dietary tracking** — Manage and link nutritional preferences and habits directly within your planning ecosystem
+### chaufa-8 (Fast & Focused)
+One calendar action at a time. It is instant, lightweight, and perfect for quick edits like adding an event, shifting a time slot, or cancelling a task.
 
-- **Contacts integration** — Keep your personal network close and connect contacts to your events
+### chaufa-8-pro (Most Powerful)
+Built for complex coordination. It handles up to 12 steps in a single message across your **Calendar, Contacts, and Diary**. It intelligently previews risky changes, understands natural conversational follow-ups (e.g., *"move it 1 hour later"*), and lets you revert everything with a **single-tap Undo**.
 
-- **Advanced data management** — Full mastery over your local database with a dedicated section to control your privacy
+---
 
-- **Repeating events, locations and reminders** — Daily, weekly, monthly and yearly repeats
+## How chaufa Thinks
 
-- **Seasons, holidays and moon phases** — Equinoxes, solstices, Easter, festive days and moon phases, each of which can be toggled
+The core engine handles natural language processing using a strict 100% local 3-step pipeline:
 
-- **Search** — Find events by title, location or note content
+1. **Understand:** It splits your messy message into individual atomic actions and reads the structural layout of your local data (`IndexedDB`).
+2. **Plan:** It builds a safe, step-by-step execution plan using sandboxed tools. It never raw-edits your database directly.
+3. **Apply Live:** Each planned action animates and renders directly onto your calendar grid as it happens, keeping a rollback snapshot active.
 
-- **Quests** — Eight small missions that teach the app and grow your level from Seedling to Full bloom
+---
 
-- **Five themes** — Lavender, Dawn, Ocean, Mist and Night
+## The Lavender Suite Expansion
 
-## Keyboard Shortcuts
+Lavender v8.0.0 expands beyond the grid view into a unified client-side ecosystem:
+* **Calendar:** Your central schedule featuring smooth navigation, fluid Day/Week/Month/Year/Agenda views, and micro-interactions.
+* **Contacts:** A local address book to manage relationships, automatically injecting birthdays and custom milestones into your core schedule.
+* **Dietary:** A built-in nutritional and meal-planning track synced alongside your daily time-blocking grid.
+* **Diary:** A secure personal logger to track mood patterns, notes, and habits via natural syntax execution.
 
-| Key | Action |
-|-----|--------|
-| D W M Y A | Day, week, month, year, agenda |
-| T | Jump to today |
-| J / K or arrows | Next / previous period |
-| C or / | Focus the Smart bar |
-| Esc | Close dialogs |
+---
+
+## 100% Local. 100% Yours.
+
+* **No Accounts:** Just open the page and start organizing.
+* **No Cloud / No Servers:** Your text, voice entries, data, and schedules never leave your local device storage.
+* **Zero Tracking:** No telemetry, no algorithms spying on your habits, and no ad trackers.
+
+---
 
 ## Getting Started
 
-Lavender is a single static HTML file with no build step and no dependencies.
+Since Lavender is a progressive client-side application, you can run it instantly or host your own build.
 
-1. Clone the repository.
-2. Open `index.html` in your browser.
-
-Or serve it locally:
-
+### Development Setup
 ```bash
-python3 -m http.server 8000
+# Clone the repository
+git clone https://github.com
+
+# Navigate to the folder
+cd lavender
+
+# Install local dependencies
+npm install
+
+# Run the local development environment
+npm run dev
 ```
 
-Then visit `http://localhost:8000`.
+## 📄 License
 
-The Google Sans font is loaded from Google Fonts, so an internet connection is needed to see it. Without one, the app falls back to a system font.
-
-## Your Data
-
-Everything is stored in your browser's localStorage. Nothing is sent to any server. Clearing your browser data erases your calendar, so copy anything important elsewhere.
-
-## Notes and Limitations
-
-- Reminders appear as in-app notifications while the tab is open.
-- Seasonal dates and moon phases are astronomical approximations and can be off by a day in some years.
-- Data is tied to one browser on one device. There is no sync or sharing yet.
-
-## Roadmap
-
-- Drag and resize events
-- Import and export (.ics)
-- Sharing calendars between people
-- Event colours and attachments
-- Browser notifications
-
-## Contributing
-
-Contributions are welcome. Open an issue to discuss a bug or an idea, or send a pull request. Keep changes small and focused, and describe what you tested.
-
-## License
-
-This project is licensed under the GNU General Public License v3.0 or later.
-See the [LICENSE](LICENSE) file for the full text.
+Lavender is free, open-source software. Everything runs on your hardware, exactly the way software should.
