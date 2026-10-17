@@ -1,179 +1,43 @@
-# Lavender Roadmap
+# Lavender Roadmap: The Evolution of chaufa (v9.0.0 → v12.0.0)
 
-Strategic vision for Lavender's evolution, from the current v3.1.0 towards a full suite.
-
----
-
-## Current Status
-
-**v3.1.0** — Mobile-first redesign, scrollless calendar, collapsible options, guided tours, profiles, autumn & winter themes, rain theme, lite & fried-yuca models.
+Strategic vision for Mangosoft's core local engines, expanding intelligence, automation, and ecosystem integration completely in the browser.
 
 ---
 
-## Version Milestones
+## v9.0.0 — **Major: v9chaufa — Temporal Context & Proactive Suggestions**
+**Focus:** Memory over time and proactive scheduling without breaking the zero-cloud promise.
 
-### v3.1.1 — **Patch: Mobile Refinement & New Quests**
-
-**Focus:** Bug fixes and UX polish after real mobile testing.
-
-- [ ] Mobile bug fixes from real device testing
-- [ ] Updated onboarding tour for new design
-- [ ] New quests for Dietary, Contacts, and Profile features
-- [ ] Performance optimizations on mobile
-
-**Status:** Ready for release  
-**Priority:** High
+- [ ] **Long-Term Memory Vault:** `chaufa-9` can reference events from months ago (e.g., *"Move this meeting to the same time we met last month"*).
+- [ ] **Proactive Gap Filling:** The engine automatically detects empty slots matching your productivity patterns and suggests focus blocks.
+- [ ] **Multi-Intent Speech Streaming:** Real-time voice processing that updates the calendar grid *while* you are still speaking, word by word.
+- [ ] **Smart Conflict Resolution:** If an overlapping event occurs, it suggests 3 alternative optimized slots based on your historical habits.
 
 ---
 
-### v3.2.0 — **Minor: Sharing & Portability**
+## v10.0.0 — **Major: v10chaufa — Cross-Device Mesh Networking**
+**Focus:** Serverless, end-to-end encrypted (E2EE) data synchronization driven entirely by voice and chat.
 
-**Focus:** Export events and share calendar data in multiple formats.
-
-- [ ] Export single event as ICS
-- [ ] Export week as ICS
-- [ ] Export as image (PNG/JPG)
-- [ ] Export as PDF
-- [ ] Copy event as text
-- [ ] Share links for events/weeks
-
-**Timeline:** 2-3 weeks  
-**Priority:** High
+- [ ] **P2P Local Sync Mesh:** Connect your phone, tablet, and laptop via WebRTC. `chaufa-10` orchestrates database merges locally with zero external servers.
+- [ ] **Collaborative Booking (No Cloud):** Generate temporary, encrypted local keys to share free/busy matrices with family or coworkers directly.
+- [ ] **Contextual UI Morphing:** The interface automatically changes layout based on the task `chaufa-10` is assisting with (e.g., expanding the Dietary grid during recipe planning).
+- [ ] **Hardware-Accelerated WebGPU Parsing:** Offload complex multi-step planning to the local GPU for instant 12+ step execution.
 
 ---
 
-### v4.0.0 — **Major: Notifications & Installability**
+## v11.0.0 — **Major: v11chaufa — Autonomous Agents & Background Work**
+**Focus:** Local background execution and scheduled automation scripts.
 
-**Focus:** Real browser notifications and offline-first PWA experience.
-
-- [ ] Browser notifications (real system alerts)
-- [ ] Installable app (PWA — add to home screen)
-- [ ] Service Worker for full offline functionality
-- [ ] Sync queue for offline changes
-- [ ] Install prompts and native-like UX
-
-**Timeline:** 4-5 weeks  
-**Priority:** High
+- [ ] **Local Automation Workers:** Grant `chaufa-11` permission to run scheduled checks in the background via Service Workers (e.g., auto-cleaning expired tasks at midnight).
+- [ ] **External API Bridges (Client-Side):** Secure, user-configured local webhooks. `chaufa-11` can fetch local weather or public transport schedules to adjust your morning transit events.
+- [ ] **Advanced Habit Chains:** Link habits dynamically across apps (e.g., completing a fitness event in Calendar automatically updates nutritional targets in Dietary).
+- [ ] **Predictive Mood Analytics:** The Diary module analyzes semantic text patterns locally to alert you about potential burnout weeks.
 
 ---
 
-### v4.1.0 — **Minor: Today Panel & Widgets**
+## v12.0.0 — **Major: v12chaufa — The Ultimate Local Sovereign OS**
+**Focus:** The definitive maturation of Mangosoft into a fully autonomous, offline-first operating system for your life.
 
-**Focus:** Quick access and at-a-glance information.
-
-- [ ] "Today" panel — Consolidated view of today's events
-- [ ] Widget support — Quick calendar widgets
-- [ ] Notification badges — Unread event count
-- [ ] Quick add from widget
-
-**Timeline:** 2-3 weeks  
-**Priority:** Medium
-
----
-
-### v5.0.0 — **Major: Planning & Productivity**
-
-**Focus:** Habits, goals, time blocking, and drag-to-reorganize.
-
-- [ ] **Habits & Goals** — Track habits linked to quests and missions
-- [ ] **Time blocks** — Schedule focused work periods
-- [ ] **Drag and resize events** — Reorganize calendar visually
-- [ ] **Goal tracking** — Progress towards personal objectives
-- [ ] **Habit streaks** — Motivation through consistency visualization
-
-**Timeline:** 6-8 weeks  
-**Priority:** High
-
----
-
-### v5.1.0 — **Minor: Intelligent Time Detection** (fried-yuca model)
-
-**Focus:** AI-powered free time and conflict detection.
-
-- [ ] **Find free time** — Suggest available slots for new events
-- [ ] **Conflict detection** — Alert when events overlap or clash
-- [ ] **Time recommendations** — Best times for tasks based on patterns
-- [ ] **Smart scheduling** — Auto-suggest meeting times
-
-**Timeline:** 3-4 weeks  
-**Priority:** Medium
-
----
-
-### v6.0.0 — **Major: Next Generation Models**
-
-**Focus:** Completely redesigned parsing engine with voice input and chained questions.
-
-- [ ] **New parsing engine** — Faster, smarter, more accurate
-- [ ] **Voice dictation** — Speak to create events
-- [ ] **Chained questions** — Clarify ambiguous input naturally
-- [ ] **Context awareness** — Learn from your patterns
-- [ ] **Multiple language improvements** — Better Catalan, French, Aranese support
-- [ ] **Custom model naming** — Community decides new model names
-
-**Timeline:** 8-10 weeks  
-**Priority:** High
-
----
-
-### v6.1.0 — **Minor: Expanded Themes & Theme Creator**
-
-**Focus:** Seasonal themes and personalization.
-
-- [ ] **Spring theme pack**
-- [ ] **Summer theme pack**
-- [ ] **Custom theme creator** — Design your own themes
-- [ ] **Animated theme** — Second animated theme (e.g., falling snow)
-- [ ] **Theme sharing** — Community theme library
-
-**Timeline:** 3-4 weeks  
-**Priority:** Medium
-
----
-
-### v7.0.0 — **Major: Lavender Suite & Design Renewal**
-
-**Focus:** Unified ecosystem linking Calendar, Contacts, Dietary, and Mango One.
-
-- [ ] **Lavender Suite** — Seamless integration across apps
-  - Calendar ↔ Contacts (link people to events)
-  - Calendar ↔ Dietary (meal planning, nutritional reminders)
-  - Calendar ↔ Mango One (focus sessions, productivity)
-- [ ] **Design renewal** — Modern, cohesive UI across all modules
-- [ ] **Unified data** — Single source of truth for shared data
-- [ ] **Cross-app quests** — Missions spanning multiple apps
-- [ ] **Suite settings** — Central configuration
-
-**Timeline:** 10-12 weeks  
-**Priority:** High
-
-**Note:** This represents the maturation of Lavender into a full personal ecosystem.
-
----
-
-## Post-7.0.0 Vision
-
-### The "Max" Line (v1.0.0max → v2.3.3max)
-
-After v7.0.0 is stabilized, a parallel "max" versioning line will track extended features, enterprise variants, or community editions.
-
----
-
-## Known Limitations (Current)
-
-- Reminders only appear in-tab (fixed in v4.0.0)
-- No data sync between devices (roadmap for later)
-- Mobile UX still being perfected (improving through v3.1.1)
-- Voice input not yet available (coming in v6.0.0)
-
----
-
-## Contributing
-
-Open an issue to discuss ideas, report bugs, or propose features. Keep PRs focused and well-tested.
-
----
-
-**Last updated:** October 12, 2026  
-**Current version:** 3.1.0  
-**Next release:** 3.1.1 (patch)
+- [ ] **Ecosystem Core Independence:** `chaufa-12` becomes capable of running as a background daemon on your desktop/mobile OS, executing commands globally.
+- [ ] **Infinite Step Chaining:** Complete removal of the 12-step limit for the Pro model; the engine can re-architect a whole monthly schedule from a single conversational paragraph.
+- [ ] **Mangosoft Custom Model Distillation:** Compile and bake your own fine-tuned version of chaufa based strictly on your personal data history, stored as an immutable local file.
+- [ ] **Universal Voice Command Intercept:** Full hands-free operation mode with wake-word detection running directly inside the persistent PWA tab.
