@@ -1,84 +1,121 @@
-# Lavender — The Open-Source Calendar That Listens
+# Lavender · v9chaufa
 
-> **v8.0.0 (v8chaufa) · Powered by Mangosoft**
+The calendar that listens. Lavender is a calendar app that lives in **a single HTML file**: no install, no account, no server. Your data stays in your browser.
 
-Lavender is a privacy-first, mobile-friendly calendar that runs completely in your browser. No accounts, no ads, and no cloud servers. Everything is processed locally on your device.
-
-With the release of the **v8chaufa** engine, Lavender transitions into a full personal productivity suite, introducing **Mangosoft**—a local intelligence ecosystem that links your Calendar, Contacts, Dietary Planner, and Diary through natural language.
+> Current version: **v9chaufa** (`lavender-9chaufa.html`), with the **Mangosoft** assistant.
 
 ---
 
-## Talk to your calendar. *Watch it move.*
+## Getting started
 
-Meet **chaufa**, the local engine behind Mangosoft. Give it a long, messy instruction and it books, moves, and updates your events, contacts, and diary live, right on your calendar screen.
+1. Download `lavender-9chaufa.html`.
+2. Open it in any modern browser (Chrome, Edge, Firefox, Safari).
+3. Press **Open Lavender** and follow the 30-second tour.
 
-> *"Move dinner with Marta to Friday at 9pm, add her birthday to the calendar and log mood happy."*
-> 
-> * ✓ **Moved Dinner with Marta** · Fri 21:00
-> * ✓ **Birthday of Marta added** to the calendar
-> * ✓ **Diary updated** · mood 😄
+That's it. It also works offline; only the typeface is loaded from Google Fonts.
 
 ---
 
-## Two Models. One Goal: Your Time.
+## Tabs
 
-Mangosoft runs two highly optimized local processing engines tailored to your pace:
+Five tabs sit in the bottom bar on mobile and in the top bar on desktop, with **Mangosoft** in the centre:
 
-### chaufa-8 (Fast & Focused)
-One calendar action at a time. It is instant, lightweight, and perfect for quick edits like adding an event, shifting a time slot, or cancelling a task.
-
-### chaufa-8-pro (Most Powerful)
-Built for complex coordination. It handles up to 12 steps in a single message across your **Calendar, Contacts, and Diary**. It intelligently previews risky changes, understands natural conversational follow-ups (e.g., *"move it 1 hour later"*), and lets you revert everything with a **single-tap Undo**.
-
----
-
-## How chaufa Thinks
-
-The core engine handles natural language processing using a strict 100% local 3-step pipeline:
-
-1. **Understand:** It splits your messy message into individual atomic actions and reads the structural layout of your local data (`IndexedDB`).
-2. **Plan:** It builds a safe, step-by-step execution plan using sandboxed tools. It never raw-edits your database directly.
-3. **Apply Live:** Each planned action animates and renders directly onto your calendar grid as it happens, keeping a rollback snapshot active.
+| Tab | What it does |
+| --- | --- |
+| **Calendar** | Day, week, month, year and agenda views. |
+| **Focus** | Pomodoro timer with breaks and calm noise. |
+| **Mangosoft** | The calendar assistant. |
+| **Insights** | Stats about your week. |
+| **Countdown** | Days left until your celebrations and tasks. |
 
 ---
 
-## The Lavender Suite Expansion
+## Calendar
 
-Lavender v8.0.0 expands beyond the grid view into a unified client-side ecosystem:
-* **Calendar:** Your central schedule featuring smooth navigation, fluid Day/Week/Month/Year/Agenda views, and micro-interactions.
-* **Contacts:** A local address book to manage relationships, automatically injecting birthdays and custom milestones into your core schedule.
-* **Dietary:** A built-in nutritional and meal-planning track synced alongside your daily time-blocking grid.
-* **Diary:** A secure personal logger to track mood patterns, notes, and habits via natural syntax execution.
+- **Views:** day, week, month, year and agenda.
+- **Item types:** events, celebrations, tasks and other.
+- **Editable calendars:** rename them and change their colour.
+- **Today strip:** how many items you have today and what comes next.
+- **Undo and redo:** the ↶ ↷ buttons, or `Ctrl+Z` / `Ctrl+Y`.
+- **Starred items:** mark items with ★ from the editor.
+- **Right-click menu** on any item: open, star, duplicate, move to tomorrow, mark as done, delete.
+- **Habits and quests** in the habits panel.
+- **Themes**, including a custom theme.
+- **Reminders** for upcoming items.
+- **Share this week**, **Print / PDF**, and **Install app**.
+- **Backup:** export and import your data.
 
 ---
 
-## 100% Local. 100% Yours.
+## Mangosoft
 
-* **No Accounts:** Just open the page and start organizing.
-* **No Cloud / No Servers:** Your text, voice entries, data, and schedules never leave your local device storage.
-* **Zero Tracking:** No telemetry, no algorithms spying on your habits, and no ad trackers.
+Lavender's assistant. Ask or instruct it in natural language: events, reminders, notes, birthdays, the time and the day.
+
+- **"Let's start?" screen:** a large text box with suggestions underneath.
+- **Model picker** inside the text box:
+  - `chaufa-9`: the newest and most powerful. Remembers months of your calendar, suggests focus blocks, fixes conflicts and listens while you speak.
+  - `chaufa-8`: fast, one calendar action at a time.
+  - `chaufa-8-pro`: long instructions, up to 12 steps across Calendar and Diary, with previews and undo.
+- **Large conversation** once you start writing.
+- **Voice:** dictate instructions, where the browser supports it.
+- **Long-term memory vault**, **smart conflict fixes** and **live voice**.
+- **Focus block suggestions:** free slots in your calendar, shown as centred cards that refresh on their own.
+- **Undo** what Mangosoft did.
+
+> Mangosoft understands commands in English, Catalan, French and Aranese. In Chinese the interface is translated, but instructions must be written in one of the other languages.
 
 ---
 
-## Getting Started
+## Focus
 
-Since Lavender is a progressive client-side application, you can run it instantly or host your own build.
+- 25, 50 and 15-minute sessions; 5 and 10-minute breaks.
+- Optional calm noise.
+- Every finished focus session is saved to your calendar as a **focus block**.
+- Shows the minutes you focused today.
 
-### Development Setup
-```bash
-# Clone the repository
-git clone https://github.com
+## Insights
 
-# Navigate to the folder
-cd lavender
+- Items this week, tasks done and focus this week.
+- Your busiest day.
+- Events per weekday chart.
+- Heatmap of the last 12 weeks.
 
-# Install local dependencies
-npm install
+## Countdown
 
-# Run the local development environment
-npm run dev
+Cards with the days left until your celebrations, open tasks and starred items.
+
+---
+
+## Languages
+
+English · Català · Français · Aranés · 中文
+
+Switch language from the selector in the header. In Chinese, some long sentences on the landing page are still in English.
+
+---
+
+## Privacy
+
+Lavender is **100% local**. Everything is stored in your browser's `localStorage` and nothing is sent to any server. Back up your data from the settings, because clearing your browser data would erase your calendar.
+
+---
+
+## What's new in v9chaufa
+
+- Mangosoft in the centre of the bottom bar, with five tabs.
+- The whole app in **Google Sans**.
+- A more dynamic Mangosoft: large text box, model picker, large conversation and "Let's start?".
+- Centred, animated focus block suggestions.
+- New **Focus**, **Insights** and **Countdown** tabs.
+- Calendar: undo and redo, today strip, starred items and a right-click menu.
+- Chinese (中文) added.
+- The **Contacts** and **Diary** tabs were removed (diary data is kept).
+
+---
+
+## Structure
+
 ```
-
-## 📄 License
-
-Lavender is free, open-source software. Everything runs on your hardware, exactly the way software should.
+lavender-9chaufa.html   # the whole app: HTML, CSS and JavaScript
+README.md
+```
