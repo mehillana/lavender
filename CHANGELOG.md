@@ -31,14 +31,22 @@ Versions up to **v10** use the **chaufa** codename. From **v11** the codename is
 - More proactive suggestions: conflicts, overloaded days, missing breaks.
 - Fully translated landing page in every language.
 
-### v10chaufa · Last chaufa
-- Settings for week start and 12/24-hour time.
-- Custom colour per event.
-- Drag to move and resize events in day and week views.
-- Starred filter and saved filters.
-- ICS import and export.
-- Link a task to a Focus session.
-- Better recurring events.
+---
+
+## v10chaufa · 2026-11-11
+
+### Added
+- Custom colour per event (event editor).
+- Starred filter in the top bar.
+- 12/24-hour time switch.
+- "Add to Google Calendar" link in every event; .ics import and export (Apple Calendar and others).
+- Landing: scroll animations, 3-step explanation, comparison with Google and Apple Calendar, FAQ.
+
+### Changed
+- Chinese (中文) interface now covers the whole app and the landing page.
+
+### Still planned
+- Week start setting, drag to move and resize, saved filters, task-to-Focus link, better recurring events.
 
 ---
 
