@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🪻 lavender.
+# lavender.
 
 ### the calendar that **listens**. and also, apparently, has feelings about your Tuesday.
 
