@@ -4,7 +4,7 @@
 
 ### the calendar that **listens**. and also, apparently, has feelings about your Tuesday.
 
-![Version](https://img.shields.io/badge/version-v10chaufa-8b6bf0?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-v11yakisoba-ffc247?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-GPLv3-e57ba8?style=for-the-badge)
 ![Price](https://img.shields.io/badge/price-%240%20forever-3fb3a6?style=for-the-badge)
 ![Tracking](https://img.shields.io/badge/tracking-literally%20none-f2a05a?style=for-the-badge)
@@ -132,11 +132,12 @@ Mangosoft runs on the **chaufa** engines. Yes, named after the fried rice. We ar
 |---|---|---|
 | **chaufa-8** | Fast and focused 🏃 | One calendar action at a time: add, move, cancel. |
 | **chaufa-8-pro** | Powerful 💪 | Up to 12 steps in one message across Calendar and Diary. Previews risky changes, understands follow-ups like "move it 1 hour later". |
-| **chaufa-9** | Newest ✨ | Long-term memory, proactive focus blocks, conflict resolution with three alternatives, voice. |
+| **chaufa-9** | Smart ✨ | Long-term memory, proactive focus blocks, conflict resolution with three alternatives, voice. |
+| **yakisoba-1** | Newest 🍜 | Everything chaufa-9 does, plus daily and weekly summaries that flag overloaded days and missing breaks. *(new in v11)* |
 
 Switching model mid-typing keeps your text. Because we're not monsters.
 
-> 🍜 **Naming lore:** versions up to **v10** use the **chaufa** codename. From **v11** the codename is **yakisoba**. The noodles are inevitable.
+> 🍜 **Naming lore:** versions up to **v10** used the **chaufa** codename. **v11 is the first yakisoba release.** The noodles were inevitable.
 
 ---
 
@@ -176,7 +177,16 @@ Eight tiny missions teach you every feature and grow your level from **Seedling 
 
 ## 🎨 Themes
 
-Five soft classics and more: **Lavender, Dawn, Ocean, Mist, Night**, plus seasonal sets (**Maple, Harvest, Embers, Frost, Pine, Rain**) and special ones (**Sakura, Meadow, Citrus, Lagoon, Dusk, Snowfall**). Or build your own **Custom theme**. The whole app uses **Google Sans**.
+Five soft classics and more: **Lavender, Dawn, Ocean, Mist, Night**, plus seasonal sets (**Maple, Harvest, Embers, Frost, Pine, Rain**) and special ones (**Sakura, Meadow, Citrus, Lagoon, Dusk, Snowfall**). Or build your own **Custom theme**. **New in v11:** **Yakisoba** (the new default, dark, noodle-gold and ginger-pink) and **Ginger** (its light sibling).
+
+### 🔤 Typography *(new in v11)*
+
+Pick your typeface in Settings:
+
+| Name | Font |
+|---|---|
+| **Lavender Simple Google** | Google Sans (the classic) |
+| **Lavender Github Cubed** | Mona Sans, loaded from Google Fonts |
 
 ---
 
@@ -222,7 +232,7 @@ Five soft classics and more: **Lavender, Dawn, Ocean, Mist, Night**, plus season
 - ✅ Mangosoft is **not** a cloud AI. It's local rules in your browser.
 - ✅ Everything is open source, so you can audit it yourself
 
-The only external request the app makes is loading the font from Google Fonts. If that bugs you, self-host the font. Free software, free choices.
+The only external requests the app makes are loading the fonts (Google Sans and Mona Sans) from Google Fonts. If that bugs you, self-host the font. Free software, free choices.
 
 ---
 
@@ -246,9 +256,9 @@ The only external request the app makes is loading the font from Google Fonts. I
 
 > Everything here is a roadmap, **not a promise**. It can change. Like your plans.
 
-**Still coming in the v10 family:** week start setting, drag to move and resize events, saved filters, task ↔ Focus link, better recurring events.
+**Shipped in v11 yakisoba:** new codename, Yakisoba and Ginger themes, new motion, two typefaces, the yakisoba-1 model with daily and weekly summaries.
 
-**v11 yakisoba · Mangosoft 2** — new codename, next Mangosoft model family, commands in Chinese and Spanish, daily and weekly summaries, proactive suggestions (conflicts, overloaded days, missing breaks), fully translated landing page.
+**Still coming in v11:** week start setting, drag to move and resize events, saved filters, task ↔ Focus link, better recurring events, commands in Chinese and Spanish, proactive suggestions (conflicts, overloaded days, missing breaks as they happen), fully translated landing page.
 
 **v12 yakisoba · Planner** — auto-scheduling, goals and habit analytics with a yearly review, home-screen widgets and a daily briefing, theme gallery.
 
@@ -260,6 +270,7 @@ The only external request the app makes is loading the font from Google Fonts. I
 
 | Version | Headline |
 |---|---|
+| **v11yakisoba** | New universe: Yakisoba and Ginger themes, fresh motion, two typefaces (Simple Google / Github Cubed), yakisoba-1 with daily and weekly summaries. |
 | **v10chaufa** | Event colours, starred filter, 12/24h, Google Calendar link, complete Chinese, animated landing. |
 | **v9chaufa** | Focus, Insights and Countdown tabs. Undo/redo. New Mangosoft screen. Chinese added. |
 
