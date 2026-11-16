@@ -23,13 +23,28 @@ Versions up to **v10** use the **chaufa** codename. From **v11** the codename is
 - Home-screen widgets and a daily briefing.
 - Theme gallery.
 
-### v11yakisoba · Mangosoft 2 (new codename)
-- New codename: **yakisoba** replaces chaufa.
-- Next Mangosoft model family under the yakisoba name.
+### v11yakisoba · remaining
 - Mangosoft understands commands in Chinese and Spanish.
-- Daily and weekly summaries written by Mangosoft.
-- More proactive suggestions: conflicts, overloaded days, missing breaks.
+- Proactive suggestions as they happen: conflicts, overloaded days, missing breaks.
 - Fully translated landing page in every language.
+- Week start setting, drag to move and resize, saved filters, task-to-Focus link, better recurring events.
+
+---
+
+## v11yakisoba · 2026-11-16
+
+New codename: **yakisoba** replaces chaufa. The start of a new universe.
+
+### Added
+- **Yakisoba** theme (new default, dark) and **Ginger** (light), with a new noodle-gold, ginger-pink and lavender palette.
+- Typography choice in Settings: **Lavender Simple Google** (Google Sans) and **Lavender Github Cubed** (Mona Sans, from Google Fonts).
+- **yakisoba-1**, the new Mangosoft model: everything chaufa-9 does, plus daily and weekly summaries that flag overloaded days and missing breaks ("Summarise my week").
+- Landing: "New in v11yakisoba" section, translated to Catalan, French, Aranese and Chinese.
+
+### Changed
+- New motion: views settle in with a soft focus, Mangosoft messages pop in, event chips spring on hover, the gradient on headlines flows, the logo dot breathes. All of it respects reduced motion.
+- Landing colours follow the new palette.
+- Mangosoft defaults to yakisoba-1; chaufa-8, chaufa-8-pro and chaufa-9 are still available.
 
 ---
 
