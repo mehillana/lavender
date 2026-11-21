@@ -4,7 +4,7 @@
 
 ### the calendar that **listens**. and also, apparently, has feelings about your Tuesday.
 
-![Version](https://img.shields.io/badge/version-v11yakisoba-ffc247?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-v13finale-ff6f9c?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-GPLv3-e57ba8?style=for-the-badge)
 ![Price](https://img.shields.io/badge/price-%240%20forever-3fb3a6?style=for-the-badge)
 ![Tracking](https://img.shields.io/badge/tracking-literally%20none-f2a05a?style=for-the-badge)
@@ -38,8 +38,8 @@ You type *"Dinner with Marta Friday 8pm"*. It becomes a real event. You didn't c
 
 - [🚀 Quick start](#-quick-start)
 - [✨ What can it do?](#-what-can-it-do)
-- [🥭 Mangosoft, the talking part](#-mangosoft-the-talking-part)
-- [🍚 The chaufa engine family](#-the-chaufa-engine-family)
+- [🥭 Mangosoft, the bar](#-mangosoft-the-bar)
+- [🍜 The engine](#-the-engine)
 - [📅 Views, calendars and types](#-views-calendars-and-types)
 - [🧘 Focus, Insights, Countdown](#-focus-insights-countdown)
 - [📔 Diary, mood and habits](#-diary-mood-and-habits)
@@ -50,7 +50,7 @@ You type *"Dinner with Marta Friday 8pm"*. It becomes a real event. You didn't c
 - [📦 Import, export and moving house](#-import-export-and-moving-house)
 - [🔒 Privacy (the boring part we love)](#-privacy-the-boring-part-we-love)
 - [🆚 Lavender vs. the big ones](#-lavender-vs-the-big-ones)
-- [🗺️ Roadmap](#️-roadmap)
+- [🏁 The final version](#-the-final-version)
 - [📜 Changelog highlights](#-changelog-highlights)
 - [🤝 Contributing](#-contributing)
 - [⚖️ License and legal](#️-license-and-legal)
@@ -101,14 +101,19 @@ Want to host it yourself? It's a static site. Drop the files on any static host,
 
 ---
 
-## 🥭 Mangosoft, the talking part
+## 🥭 Mangosoft, the bar
 
-**Mangosoft** is the assistant inside Lavender. You talk to it. It does things to your calendar. Live. In front of you. Like a very polite magic trick.
+**Mangosoft** is the bar inside Lavender. You don't chat with it, you **choose**: every field is a selector, a live preview tells you what will happen, and the change lands on your calendar in front of you. Like a very polite magic trick.
 
+- 🎛️ **A bar of selectors** *(new in v12)*. Three modes:
+  - **Create:** type, name, day (today, tomorrow, next Monday or any date), how many days, time and length, repeat, person and colour. A live preview shows the result and warns about overlaps.
+  - **Change:** filter by type, when (today, this week, next week, past, a date) and name, see the matching items live, then set type, move days, duplicate, set person, colour, time or length, star, mark done or delete, all at once.
+  - **Ask:** summaries of your day or week, free slots, conflicts and birthdays.
+- ★ **Saved bars:** save any bar as a preset and run it again with one tap.
+- ⌨️ **Ctrl+K** opens the bar from anywhere.
 - 🗣️ **Natural language, not cloud AI.** It runs locally in your browser. Fast, smart rules. No servers, no model to train, no data leaving your device. Answers in milliseconds.
 - 🌐 **Understands** English, Catalan, French and Aranese (and Chinese and Spanish commands are on the roadmap).
 - 💬 **Ask it anything about your calendar:** *"What do I have tomorrow?"*, *"When is Marta's birthday?"*, *"When am I free on Friday?"*
-- 🎙️ **Voice:** speak several instructions in a row. Each one is understood and applied on the live grid while you're still talking.
 - 🧠 **Memory:** *"Move this meeting to the same time we met last month."* It looks back through months of your own history. Locally.
 - 🎯 **Focus block suggestions:** it learns when you work best and offers focus blocks in your empty gaps. It **never** books anything without your tap.
 - 💥 **Conflicts:** when two events collide it offers three better slots.
@@ -124,20 +129,11 @@ Want to host it yourself? It's a static site. Drop the files on any static host,
 
 ---
 
-## 🍚 The chaufa engine family
+## 🍜 The engine
 
-Mangosoft runs on the **chaufa** engines. Yes, named after the fried rice. We are very serious people.
+Mangosoft runs on a single engine: **yakisoba-1**. No model picker, no tiers. It powers the bar (create, change, ask), bulk changes, daily and weekly summaries, conflict checks with three alternatives, focus block suggestions and long-term memory over your own history. All local, all in your browser.
 
-| Model | Personality | Good for |
-|---|---|---|
-| **chaufa-8** | Fast and focused 🏃 | One calendar action at a time: add, move, cancel. |
-| **chaufa-8-pro** | Powerful 💪 | Up to 12 steps in one message across Calendar and Diary. Previews risky changes, understands follow-ups like "move it 1 hour later". |
-| **chaufa-9** | Smart ✨ | Long-term memory, proactive focus blocks, conflict resolution with three alternatives, voice. |
-| **yakisoba-1** | Newest 🍜 | Everything chaufa-9 does, plus daily and weekly summaries that flag overloaded days and missing breaks. *(new in v11)* |
-
-Switching model mid-typing keeps your text. Because we're not monsters.
-
-> 🍜 **Naming lore:** versions up to **v10** used the **chaufa** codename. **v11 is the first yakisoba release.** The noodles were inevitable.
+> 🍜 **Naming lore:** versions up to **v10** used the **chaufa** codename, **v11** and **v12** used **yakisoba**, and **v13 is the finale**. The noodles were inevitable.
 
 ---
 
@@ -177,7 +173,7 @@ Eight tiny missions teach you every feature and grow your level from **Seedling 
 
 ## 🎨 Themes
 
-Five soft classics and more: **Lavender, Dawn, Ocean, Mist, Night**, plus seasonal sets (**Maple, Harvest, Embers, Frost, Pine, Rain**) and special ones (**Sakura, Meadow, Citrus, Lagoon, Dusk, Snowfall**). Or build your own **Custom theme**. **New in v11:** **Yakisoba** (the new default, dark, noodle-gold and ginger-pink) and **Ginger** (its light sibling).
+Five soft classics and more: **Lavender, Dawn, Ocean, Mist, Night**, plus seasonal sets (**Maple, Harvest, Embers, Frost, Pine, Rain**) and special ones (**Sakura, Meadow, Citrus, Lagoon, Dusk, Snowfall**). Or build your own **Custom theme**. **Yakisoba** is the new default: a refined dark theme in ink violet with a peach and pink glow. **Ginger** is its light sibling.
 
 ### 🔤 Typography *(new in v11)*
 
@@ -210,6 +206,7 @@ Pick your typeface in Settings:
 | `T` | Go to today |
 | `C` | Create |
 | `Ctrl+Z` / `Ctrl+Y` | Undo / redo |
+| `Ctrl+K` | Open the Mangosoft bar |
 
 ---
 
@@ -252,17 +249,9 @@ The only external requests the app makes are loading the fonts (Google Sans and 
 
 ---
 
-## 🗺️ Roadmap
+## 🏁 The final version
 
-> Everything here is a roadmap, **not a promise**. It can change. Like your plans.
-
-**Shipped in v11 yakisoba:** new codename, Yakisoba and Ginger themes, new motion, two typefaces, the yakisoba-1 model with daily and weekly summaries.
-
-**Still coming in v11:** week start setting, drag to move and resize events, saved filters, task ↔ Focus link, better recurring events, commands in Chinese and Spanish, proactive suggestions (conflicts, overloaded days, missing breaks as they happen), fully translated landing page.
-
-**v12 yakisoba · Planner** — auto-scheduling, goals and habit analytics with a yearly review, home-screen widgets and a daily briefing, theme gallery.
-
-**v13 yakisoba · Polish and portability** — fully offline PWA with background reminders, encrypted backups with optional sync through a file you own (no server), accessibility pass (keyboard nav, screen-reader labels, high-contrast theme), performance for years of data, small plugin system.
+**v13finale is the last version of Lavender.** No more features, no more updates: it stays exactly as it is, free, local and yours. Read the full story in [`finale.md`](finale.md).
 
 ---
 
@@ -270,6 +259,8 @@ The only external requests the app makes are loading the fonts (Google Sans and 
 
 | Version | Headline |
 |---|---|
+| **v13finale** | The final version. One engine (yakisoba-1), the final Yakisoba design, and the end of updates. |
+| **v12yakisoba · Més Dinàmic** | New universe: refined Yakisoba theme, Mangosoft as a bar of selectors with bulk changes, saved bars and Ctrl+K. |
 | **v11yakisoba** | New universe: Yakisoba and Ginger themes, fresh motion, two typefaces (Simple Google / Github Cubed), yakisoba-1 with daily and weekly summaries. |
 | **v10chaufa** | Event colours, starred filter, 12/24h, Google Calendar link, complete Chinese, animated landing. |
 | **v9chaufa** | Focus, Insights and Countdown tabs. Undo/redo. New Mangosoft screen. Chinese added. |
@@ -280,7 +271,7 @@ Full details live in [`CHANGELOG.md`](CHANGELOG.md).
 
 ## 🤝 Contributing
 
-Found a bug? Have a wild idea? Want to translate Lavender into your language? Please do. Open an issue or a pull request.
+Lavender is finished: v13finale is the last version, so no new features are planned. You are very welcome to fork it under the GPLv3 and take it somewhere new (please pick your own name).
 
 - Keep the **privacy-first** spirit: no trackers, no accounts, no servers.
 - Contributions are licensed under **GPLv3**, like the rest of the project.
@@ -304,6 +295,6 @@ Envisioned, designed and developed with a lot of joy by **Etienne González Zár
 
 **Made happily. Free of charge. Forever.**
 
-*lavender.* 🪻 *Open your week. Say one sentence.*
+*lavender.* 🪻 *Open your week. Set it on the bar.*
 
 </div>
