@@ -2,32 +2,44 @@
 
 All notable changes to Lavender. Format based on [Keep a Changelog](https://keepachangelog.com/).
 
-Versions up to **v10** use the **chaufa** codename. From **v11** the codename is **yakisoba**.
+Versions up to **v10** used the **chaufa** codename, **v11** and **v12** used **yakisoba**, and **v13** is the **finale**.
 
-> Everything under *Planned* is a roadmap, not a promise. It can change.
+> **v13finale is the last version.** There is no roadmap: Lavender is finished.
 
 ---
 
-## Planned
+## v13finale · 2026-11-21
 
-### v13yakisoba · Polish and portability
-- Fully offline installable app (PWA) with background reminders.
-- Encrypted backups, plus optional sync through a file you own (no server).
-- Accessibility pass: keyboard navigation everywhere, screen-reader labels, high-contrast theme.
-- Performance work for years of data.
-- Small plugin system for custom views and Mangosoft actions.
+The final version. Design only.
 
-### v12yakisoba · Planner
-- Auto-scheduling: Mangosoft places your tasks into free slots.
-- Goals and habit analytics, with a yearly review in Insights.
-- Home-screen widgets and a daily briefing.
-- Theme gallery.
+### Changed
+- **One engine.** yakisoba-1 is now the only Mangosoft engine. The model picker and the chaufa models are gone, and the engine is frozen.
+- **Final design pass:** Mangosoft bar with a gradient edge, softer glass and custom selector arrows, a clearer preview, calmer chips, lifted landing cards, thin scrollbars, themed text selection and visible focus rings.
+- Landing: "One engine. One goal: your time." and "v13finale: the final version", plus the privacy text now names yakisoba-1.
 
-### v11yakisoba · remaining
-- Mangosoft understands commands in Chinese and Spanish.
-- Proactive suggestions as they happen: conflicts, overloaded days, missing breaks.
-- Fully translated landing page in every language.
-- Week start setting, drag to move and resize, saved filters, task-to-Focus link, better recurring events.
+### Removed
+- chaufa-8, chaufa-8-pro and chaufa-9 as selectable models.
+- The roadmap. There are no more planned versions.
+
+---
+
+## v12yakisoba · Més Dinàmic · 2026-11-21
+
+### Added
+- **Mangosoft is now a bar of selectors, not a chat.**
+  - Create: type, name, day (or a date), number of days, time and length, repeat, person, colour, with a live preview and an overlap warning.
+  - Change: filter by type, when and name, see the matching items live, then set type, move days, duplicate, person, colour, time, length, star, done or delete for all of them.
+  - Ask: day and week summaries, free slots, conflicts, birthdays.
+- **Saved bars:** save any bar as a preset (★) and run it again with one tap.
+- **Ctrl+K** opens the bar from anywhere.
+- Landing rewritten for the bar: new hero, "How the bar works", "Pick it your way" examples that load into the bar, and a "New in v12yakisoba" section. Translated to Catalan, French and Aranese.
+
+### Changed
+- **Yakisoba** theme refined: ink violet with a peach and pink glow. It is the new default.
+- Springier chips and a live-updating bar.
+
+### Removed
+- The Mangosoft chat and its voice input, replaced by the bar.
 
 ---
 
